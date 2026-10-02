@@ -1,8 +1,8 @@
 # Arabic - cleaned data
 
-**Raw source:** `../Arabic_Depression_10.000_Tweets.xlsx` (main page of this repo)
-**Task:** binary classification - 1 = depression, 0 = not depression
-**Code:** `arabic_cleaning.ipynb` (Colab: upload the raw xlsx, then Runtime → Run all)
+- **Raw source:** `../Arabic_Depression_10.000_Tweets.xlsx` (main page of this repo)
+- **Task:** binary classification – 1 = depression, 0 = not depression
+- **Code:** `arabic_cleaning.ipynb` (Colab: upload the raw xlsx, then Runtime → Run all)
 
 ## Which file should I use?
 
