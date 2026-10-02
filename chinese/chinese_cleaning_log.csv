@@ -1,0 +1,6 @@
+step,posts,posts_label_1,posts_label_0,users_label_1,users_label_0
+0. own posts (reposts removed),146590,78725,67865,500,500
+1. clean text + drop empty,143507,77336,66171,500,500
+2. drop duplicates,140709,76283,64426,500,500
+3. keep 15-100 words,75869,42091,33778,500,500
+4. one post per user (keyword) + 50/50 sample,100,50,50,50,50
