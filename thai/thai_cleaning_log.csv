@@ -1,0 +1,8 @@
+step,rows,label_1,label_0
+0. raw,2400,379,2021
+1. drop empty,2400,379,2021
+2. clean text,2400,379,2021
+3. drop conflicting,2396,377,2019
+4. drop duplicates,2376,375,2001
+5. keep >= 15 words,1285,202,1083
+6. balanced sample,100,50,50
