@@ -10,15 +10,15 @@
 
 | File | What it's for |
 |---|---|
-| `thai_sample_split.csv` | **Main file.** 50 + 50 tweets split into full / prefix / middle / suffix |
+| `thai_sample_split.csv` | **Main file.** 50 + 50 tweets split into full / prefix/middle/suffix |
 | `thai_cleaning_log.csv` | How many tweets were left after each cleaning step |
 | `thai_clean_before_length_filter.csv` | All 2,376 cleaned tweets (for charts) |
 | `thai_clean_full.csv` | 1,285 cleaned tweets with 15+ words (for training) |
 
 ## What I did
-1. Removed hashtags, links, usernames and extra symbols
-2. Removed duplicate and contradictory tweets (2,400 → 2,376)
-3. Kept tweets with at least 15 words (→ 1,285)
+1. Removed hashtags, links, usernames, and extra symbols
+2. Removed duplicate and contradictory tweets (2,400 to 2,376)
+3. Kept tweets with at least 15 words ( 1,285)
 4. Picked 50 random tweets from each label (seed = 42)
 5. Split each tweet into 3 equal parts
 
