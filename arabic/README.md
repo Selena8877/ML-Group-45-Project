@@ -2,7 +2,7 @@
 
 - **Raw source:** `../Arabic_Depression_10.000_Tweets.xlsx` (main page of this repo)
 - **Task:** binary classification – 1 = depression, 0 = not depression
-- **Code:** `arabic_cleaning.ipynb` (Colab: upload the raw xlsx, then Runtime → Run all)
+- **Code:** `arabic_cleaning.ipynb` (Colab: upload the raw xlsx, then Runtime - Run all)
 
 ## Which file should I use?
 
@@ -37,6 +37,8 @@
 \* Removed Excel `_x000D_` codes, HTML codes, invisible text-direction marks, `RT`, and links; replaced usernames with `[USER]`. **Kept** punctuation, emojis and hashtags.
 
 **Why ≥ 15 words?** Each post is split into thirds, so 15 words gives about 5 words per part (enough for a meaningful phrase) while keeping 1,300+ tweets per class.
+
+**Hashtags kept in Arabic** (they were rare); the other languages removed them because of hashtag spam
 
 **How splitting works:** each tweet is cut into 3 parts by word count. If it doesn't divide evenly, the extra words go to the earlier parts (e.g., 16 words → 6/5/5).
 
