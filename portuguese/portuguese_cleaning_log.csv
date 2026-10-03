@@ -1,0 +1,8 @@
+step,rows,label_1,label_0
+0. raw,3788,1097,2691
+1. drop empty,3788,1097,2691
+2. clean text,3788,1097,2691
+3. drop conflicting,3772,1089,2683
+4. drop duplicates,2940,802,2138
+5. keep >= 15 words,1241,191,1050
+6. balanced sample,100,50,50
