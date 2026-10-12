@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "majority_class_per_language": {
+    "arabic": 1,
+    "chinese": 0,
+    "portuguese": 0,
+    "thai": 0
+  },
+  "python": "3.12.6",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5",
+  "scikit-learn": "1.9.1"
+}

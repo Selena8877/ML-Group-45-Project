@@ -1,0 +1,9 @@
+model,language,split,n,accuracy,precision,recall,f1,f1_macro
+Naive (majority class),Arabic,val,524,0.5229,0.5229,1.0,0.6867,0.3434
+Naive (majority class),Arabic,test,100,0.5,0.5,1.0,0.6667,0.3333
+Naive (majority class),Chinese,val,540,0.5,0.0,0.0,0.0,0.3333
+Naive (majority class),Chinese,test,100,0.5,0.0,0.0,0.0,0.3333
+Naive (majority class),Portuguese,val,228,0.8772,0.0,0.0,0.0,0.4673
+Naive (majority class),Portuguese,test,100,0.5,0.0,0.0,0.0,0.3333
+Naive (majority class),Thai,val,237,0.8734,0.0,0.0,0.0,0.4662
+Naive (majority class),Thai,test,100,0.5,0.0,0.0,0.0,0.3333
