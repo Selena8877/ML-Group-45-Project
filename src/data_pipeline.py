@@ -200,3 +200,55 @@ def summarize(language: str, splits: dict[str, pd.DataFrame]) -> list[dict]:
         rows.append(row)
     return rows
 
+
+# --------------------------------------------------------------------------------------
+# Public API
+# --------------------------------------------------------------------------------------
+def build_all(data_root: Path = REPO_ROOT, out_dir: Path = OUT_DIR, mask: bool = False,
+              verbose: bool = True) -> pd.DataFrame:
+    out_dir.mkdir(parents=True, exist_ok=True)
+    suffix = "_masked" if mask else ""
+    summary, logs = [], []
+    for lang in LANGUAGES:
+        splits = build_language(lang, data_root, mask=mask)
+        check_no_leakage(lang, splits)
+        for s in ("train", "val", "test"):
+            splits[s].to_csv(out_dir / f"{lang}_{s}{suffix}.csv", index=False, encoding="utf-8-sig")
+        summary += summarize(lang, splits)
+        logs += [{"language": lang, "step": st, "rows": n} for st, n in splits["log"]]
+        if verbose:
+            print(f"[{lang}] " + " -> ".join(f"{st}: {n:,}" for st, n in splits["log"]))
+    summary_df = pd.DataFrame(summary)
+    summary_df.to_csv(out_dir / f"split_summary{suffix}.csv", index=False)
+    pd.DataFrame(logs).to_csv(out_dir / f"pipeline_log{suffix}.csv", index=False)
+    return summary_df
+
+
+def load_splits(language: str, masked: bool = False, out_dir: Path = OUT_DIR
+                ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Load (train, val, test) for one language. Builds the files if they are missing.
+
+    Every frame has: id, language, split, label, text
+    test also has:   prefix, middle, suffix
+    chinese also has user_id (for grouping only - never use it as a feature)
+    """
+    language = language.lower()
+    suffix = "_masked" if masked else ""
+    paths = [out_dir / f"{language}_{s}{suffix}.csv" for s in ("train", "val", "test")]
+    if not all(p.exists() for p in paths):
+        build_all(out_dir=out_dir, mask=masked, verbose=False)
+    return tuple(pd.read_csv(p, encoding="utf-8-sig") for p in paths)
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description="Build leakage-safe train/val/test splits.")
+    ap.add_argument("--masked", action="store_true", help="also build keyword-masked copies")
+    args = ap.parse_args()
+
+    np.random.seed(SEED)
+    summary = build_all()
+    print("\nSplit summary:\n" + summary.to_string(index=False))
+    if args.masked:
+        build_all(mask=True, verbose=False)
+        print("\nKeyword-masked copies written (*_masked.csv).")
+    print(f"\nFiles written to {OUT_DIR}")
