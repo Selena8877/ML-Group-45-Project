@@ -8,62 +8,61 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-# Note: this file deliberately uses only pandas + numpy (no scikit-learn), so it runs
-# on machines where scikit-learn/SciPy cannot be loaded.
-
-# --------------------------------------------------------------------------------------
-# Configuration - agreed group settings
-# --------------------------------------------------------------------------------------
+# Settings
 SEED = 42
-VAL_SIZE = 0.20                 # 80/20 train/validation
-CHINESE_POSTS_PER_USER = 3      # downsampling: 3 posts per user, about 2,400 posts total
+VAL_SIZE = 0.20
+CHINESE_POSTS_PER_USER = 3      # about 2,700 Chinese posts in total, close to Arabic
 LANGUAGES = ["arabic", "chinese", "portuguese", "thai"]
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = REPO_ROOT / "data" / "processed"
 
-# Column holding the post text in each *_clean_full.csv
+# The text column is called "tweet" in three of the cleaned files and "text" in Chinese
 TEXT_COL = {"arabic": "tweet", "portuguese": "tweet", "thai": "tweet", "chinese": "text"}
 
-# Keywords for the optional masking experiment (M2, planned step 5)
+# Keywords that get replaced with [KW] in the masked version of the data.
+# This is for the experiment that checks how much the models rely on one word.
 KEYWORDS = {
-    "arabic": [r"اكتئاب"],                     # after normalization إكتئاب -> اكتئاب
+    "arabic": [r"اكتئاب"],
     "chinese": [r"抑郁"],
     "thai": [r"ซึมเศร้า"],
-    "portuguese": [r"\bsuicid\w*"],            # suicídio, suicida, suicidar, ...
+    "portuguese": [r"\bsuicid\w*"],            # matches suicídio, suicida, suicidar, etc.
 }
 
 TEST_EXTRA_COLS = ["prefix", "middle", "suffix"]
 
 
-# --------------------------------------------------------------------------------------
-# 3. Text normalization
-# --------------------------------------------------------------------------------------
+# Text normalization
 _AR_DIACRITICS = re.compile(r"[ؐ-ًؚ-ٰٟۖ-ۭ]")
 _AR_TATWEEL = re.compile(r"ـ")
 _AR_ALEF = re.compile(r"[أإآٱ]")
-_TH_REPEAT = re.compile(r"([฀-๿])\1{2,}")   # 3+ identical Thai chars -> 1
+_TH_REPEAT = re.compile(r"([฀-๿])\1{2,}")   # the same Thai character 3 or more times in a row
 _SPACES = re.compile(r"\s+")
 
 
 def normalize_text(text: str, language: str) -> str:
-    """Apply the same normalization to every split. Returns a cleaned string."""
+    """Clean up one post. The same function is used for train, validation and test."""
     if not isinstance(text, str):
         text = "" if pd.isna(text) else str(text)
+
+    # NFKC turns different versions of the same character into one standard form,
+    # for example full-width digits and punctuation into normal ones
     t = unicodedata.normalize("NFKC", text)
 
     if language == "arabic":
-        t = _AR_DIACRITICS.sub("", t)           # remove harakat (short-vowel marks)
-        t = _AR_TATWEEL.sub("", t)              # remove tatweel (stretching char)
-        t = _AR_ALEF.sub("ا", t)                # أ إ آ ٱ -> ا
-        t = t.replace("ى", "ي")                 # alef maqsura -> ya
-        t = t.replace("ة", "ه")                 # ta marbuta -> ha
-        # ئ / ؤ are kept so the keyword اكتئاب is unchanged
+        t = _AR_DIACRITICS.sub("", t)           # short vowel marks
+        t = _AR_TATWEEL.sub("", t)              # tatweel, used to stretch words
+        t = _AR_ALEF.sub("ا", t)                # all alef forms become a plain alef
+        t = t.replace("ى", "ي")
+        t = t.replace("ة", "ه")
+        # We don't touch ئ or ؤ, otherwise the keyword اكتئاب would change
     elif language == "thai":
-        t = _TH_REPEAT.sub(r"\1", t)            # มากกกกก -> มาก  (ๆ mark is untouched)
+        t = _TH_REPEAT.sub(r"\1", t)            
     elif language == "portuguese":
-        t = t.lower().replace("[user]", "[USER]")   # lowercase, keep accents
-    # chinese: NFKC only (full-width -> half-width punctuation/digits)
+        # Lowercase but keep accents, since removing them can change the meaning.
+        # [USER] is put back in capitals so it matches the other languages.
+        t = t.lower().replace("[user]", "[USER]")
+    # Chinese only needs the NFKC step
 
     return _SPACES.sub(" ", t).strip()
 
@@ -75,19 +74,18 @@ def mask_keywords(text: str, language: str) -> str:
 
 
 def _stratified_pick(items: np.ndarray, labels: np.ndarray, frac: float) -> set:
-    """Randomly pick `frac` of the items from EACH label (seeded). Returns a set."""
+    """Pick the same fraction of items from each label, using the fixed seed."""
     rng = np.random.default_rng(SEED)
     picked = []
     for lab in sorted(np.unique(labels)):
+        # Sorting first means the result only depends on the seed, not on row order
         group = np.sort(items[labels == lab])
         rng.shuffle(group)
         picked.extend(group[: int(round(len(group) * frac))])
     return set(picked)
 
 
-# --------------------------------------------------------------------------------------
-# Loading
-# --------------------------------------------------------------------------------------
+# Loading the cleaned Milestone 2 files
 def _load_raw(language: str, data_root: Path = REPO_ROOT) -> tuple[pd.DataFrame, pd.DataFrame]:
     full = pd.read_csv(data_root / language / f"{language}_clean_full.csv", encoding="utf-8-sig")
     test = pd.read_csv(data_root / language / f"{language}_sample_split.csv", encoding="utf-8-sig")
@@ -95,55 +93,58 @@ def _load_raw(language: str, data_root: Path = REPO_ROOT) -> tuple[pd.DataFrame,
     return full, test
 
 
-# --------------------------------------------------------------------------------------
-# 1 + 2. Leakage-safe split (+ Chinese downsampling)
-# --------------------------------------------------------------------------------------
+# Building the splits for one language
 def build_language(language: str, data_root: Path = REPO_ROOT,
                    mask: bool = False) -> dict[str, pd.DataFrame]:
-    """Return {'train', 'val', 'test'} DataFrames and a 'log' of the steps."""
+    """Build the train, val and test tables for one language.
+
+    Also returns a log of how many posts were left after each step.
+    """
     full, test = _load_raw(language, data_root)
     log = [("clean_full (M2)", len(full))]
 
-    # --- 1a. remove TEST posts (matched on the exact cleaned text) --------------------
+    # The test posts are still inside the full dataset, so they have to be taken
+    # out before anything else. There is no shared id column, so we match on the text.
     pool = full[~full["text"].isin(set(test["full"]))].copy()
     log.append(("remove 100 test posts", len(pool)))
 
-    # --- 1b. Chinese: remove every post by the 100 test users -------------------------
+    # Chinese labels belong to users, not posts. If a test user's other posts were
+    # in training, the model could learn that user's writing style, so they all go.
     if language == "chinese":
         pool = pool[~pool["user_id"].isin(set(test["user_id"]))]
         log.append(("remove all posts of test users", len(pool)))
 
-    # --- normalize text (same function for train/val/test) ----------------------------
+    # Normalize everything, including the prefix/middle/suffix parts of the test set
     pool["text"] = pool["text"].map(lambda s: normalize_text(s, language))
     test = test.copy()
     test["text"] = test["full"].map(lambda s: normalize_text(s, language))
     for c in TEST_EXTRA_COLS:
         test[c] = test[c].map(lambda s: normalize_text(s, language))
 
-    # --- extra leakage guards after normalization -------------------------------------
+    # Normalizing can make two different posts identical, so we clean up again
     pool = pool[pool["text"] != ""]
-    # same text with different labels -> label is unreliable, drop all copies
+    # If the same text has both labels we can't trust either one, so drop all copies
     n_labels = pool.groupby("text")["label"].nunique()
     pool = pool[~pool["text"].isin(n_labels[n_labels > 1].index)]
-    # duplicate texts (e.g. same Weibo post from different users) -> keep one copy
+    # Keep one copy of repeated posts (Chinese had the same post under different users)
     pool = pool.drop_duplicates(subset="text", keep="first")
-    # anything that became identical to a test post after normalization
     pool = pool[~pool["text"].isin(set(test["text"]))]
     log.append(("normalize + drop dup/conflicting/test-identical", len(pool)))
 
-    # --- 2. Chinese downsampling: the same number of posts per user -------------------
+    # Chinese has about 68k posts left at this point, far more than the other
+    # languages. Taking the same number of posts from each user keeps the size
+    # comparable and stops very active users from dominating.
     if language == "chinese":
-        # shuffle once with the seed, then keep the first k posts of each user
-        # (works the same on every pandas version)
         pool = (pool.sample(frac=1, random_state=SEED)
                     .groupby("user_id").head(CHINESE_POSTS_PER_USER)
                     .sort_values(["user_id"], kind="stable"))
         log.append((f"downsample to <= {CHINESE_POSTS_PER_USER} posts/user", len(pool)))
 
-    # --- 1c. 80/20 train/val, stratified (Chinese: grouped by user) -------------------
+    # 80/20 train/validation split with the same label balance in both
     pool = pool.reset_index(drop=True)
     if language == "chinese":
-        # labels are per user, so stratify USERS by label and send 20% of them to val
+        # Split users instead of posts so nobody ends up in both train and val.
+        # Each user has a single label, so picking 20% of users per label keeps it balanced.
         users = pool.groupby("user_id")["label"].first()
         val_users = _stratified_pick(users.index.to_numpy(), users.to_numpy(), VAL_SIZE)
         is_val = pool["user_id"].isin(val_users)
@@ -152,7 +153,9 @@ def build_language(language: str, data_root: Path = REPO_ROOT,
         is_val = pool.index.isin(val_rows)
     train, val = pool[~is_val], pool[is_val]
 
-    # --- 6. text-only output schema ---------------------------------------------------
+    # Final output: only the columns the models are allowed to use. This drops the
+    # Thai emotion scores and the Chinese symptom columns, which are too closely
+    # tied to the label.
     prefix = {"arabic": "ar", "chinese": "zh", "portuguese": "pt", "thai": "th"}[language]
     lang_name = test["language"].iloc[0]
 
@@ -166,10 +169,12 @@ def build_language(language: str, data_root: Path = REPO_ROOT,
             "text": df["text"].values,
         })
         if language == "chinese":
-            out["user_id"] = df["user_id"].values   # kept ONLY for grouping, not a feature
+            out["user_id"] = df["user_id"].values   # only for grouping, not a feature
         return out
 
     train_out, val_out = _finish(train, "train"), _finish(val, "val")
+
+    # The test set keeps its original Milestone 2 ids and the three post parts
     test_out = test[["id", "language"]].assign(split="test")
     test_out["label"] = test["label"].astype(int)
     test_out["text"] = test["text"]
@@ -186,10 +191,9 @@ def build_language(language: str, data_root: Path = REPO_ROOT,
     return {"train": train_out, "val": val_out, "test": test_out, "log": log}
 
 
-# --------------------------------------------------------------------------------------
-# Checks + summary
-# --------------------------------------------------------------------------------------
+# Checks and summary
 def check_no_leakage(language: str, splits: dict[str, pd.DataFrame]) -> None:
+    """Stop the script with an error if any post (or Chinese user) is in two splits."""
     tr, va, te = (set(splits[s]["text"]) for s in ("train", "val", "test"))
     assert not (tr & va), f"{language}: train/val text overlap"
     assert not (tr & te), f"{language}: train/test text overlap"
@@ -199,10 +203,12 @@ def check_no_leakage(language: str, splits: dict[str, pd.DataFrame]) -> None:
         assert not (u["train"] & u["val"]), "chinese: user in train and val"
         assert not (u["train"] & u["test"]), "chinese: user in train and test"
         assert not (u["val"] & u["test"]), "chinese: user in val and test"
+    # The test set should still be exactly 50 posts per class
     assert len(splits["test"]) == 100 and splits["test"]["label"].sum() == 50
 
 
 def summarize(language: str, splits: dict[str, pd.DataFrame]) -> list[dict]:
+    """Count posts and labels in each split. This is what goes in the baseline table."""
     rows = []
     for s in ("train", "val", "test"):
         df = splits[s]
@@ -215,11 +221,10 @@ def summarize(language: str, splits: dict[str, pd.DataFrame]) -> list[dict]:
     return rows
 
 
-# --------------------------------------------------------------------------------------
-# Public API
-# --------------------------------------------------------------------------------------
+# Main functions
 def build_all(data_root: Path = REPO_ROOT, out_dir: Path = OUT_DIR, mask: bool = False,
               verbose: bool = True) -> pd.DataFrame:
+    """Build, check and save the splits for all four languages."""
     out_dir.mkdir(parents=True, exist_ok=True)
     suffix = "_masked" if mask else ""
     summary, logs = [], []
@@ -240,11 +245,13 @@ def build_all(data_root: Path = REPO_ROOT, out_dir: Path = OUT_DIR, mask: bool =
 
 def load_splits(language: str, masked: bool = False, out_dir: Path = OUT_DIR
                 ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """Load (train, val, test) for one language. Builds the files if they are missing.
+    """Load the train, val and test tables for one language.
 
-    Every frame has: id, language, split, label, text
-    test also has:   prefix, middle, suffix
-    chinese also has user_id (for grouping only - never use it as a feature)
+    If the CSV files don't exist yet, they are built first.
+
+    Columns in every table: id, language, split, label, text
+    The test table also has: prefix, middle, suffix
+    Chinese tables also have user_id, which should not be used as a feature.
     """
     language = language.lower()
     suffix = "_masked" if masked else ""
