@@ -1,11 +1,9 @@
-# Data pipeline (Milestone 3, Person 1)
-
 ## Run it
 ```bash
 python src/data_pipeline.py            # builds data/processed/*.csv + split_summary.csv
 python src/data_pipeline.py --masked   # also builds keyword-masked copies (*_masked.csv)
 ```
-Needs only `pandas` and `scikit-learn` (please include them in `requirements.txt`). It's deterministic: seed 42, and a rerun produces byte-identical files.
+Needs only `pandas` and `numpy`. It doesn't use scikit-learn, so it also runs on laptops where Windows blocks SciPy. The model code will still need `scikit-learn` in `requirements.txt`. It's deterministic: seed 42, and a rerun produces byte-identical files.
 
 ## Use it in your code
 ```python
@@ -45,4 +43,4 @@ X_test,  y_test  = test["text"],  test["label"]   # test also has prefix / middl
 - Use the **training** labels for the majority-class benchmark. For TH/PT that class is 0, so on the 50/50 test set the benchmark gets about 0.50 accuracy and an F1 of 0 for the positive class. This is expected.
 
 ## Known issue for the discrepancy analysis (Person 4)
-**Chinese train/test mismatch:** in Milestone 2, depressed-user test posts had to contain 抑郁 ("depression"), so 50/50 positive test posts contain it. Training posts were sampled at random from each user, and only 60 of the 1,077 positive training posts contain it. Expect validation scores to be clearly lower than test scores for Chinese. That gap comes from how the test set was built, not from the model.
+**Chinese train/test mismatch:** in Milestone 2, depressed-user test posts had to contain 抑郁 ("depression"), so 50/50 positive test posts contain it. Training posts were sampled at random from each user, and only 51 of the 1,076 positive training posts contain it. Expect validation scores to be clearly lower than test scores for Chinese. That gap comes from how the test set was built, not from the model.

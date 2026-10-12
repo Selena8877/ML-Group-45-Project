@@ -1,0 +1,13 @@
+language,split,n,label_1,label_0,pct_label_1,users
+Arabic,train,2094,1095,999,52.3,
+Arabic,val,524,274,250,52.3,
+Arabic,test,100,50,50,50.0,
+Chinese,train,2155,1076,1079,49.9,720.0
+Chinese,val,540,270,270,50.0,180.0
+Chinese,test,100,50,50,50.0,100.0
+Portuguese,train,913,113,800,12.4,
+Portuguese,val,228,28,200,12.3,
+Portuguese,test,100,50,50,50.0,
+Thai,train,948,122,826,12.9,
+Thai,val,237,30,207,12.7,
+Thai,test,100,50,50,50.0,

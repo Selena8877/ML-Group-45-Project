@@ -1,0 +1,15 @@
+language,step,rows
+arabic,clean_full (M2),2730
+arabic,remove 100 test posts,2630
+arabic,normalize + drop dup/conflicting/test-identical,2618
+chinese,clean_full (M2),75869
+chinese,remove 100 test posts,75740
+chinese,remove all posts of test users,68674
+chinese,normalize + drop dup/conflicting/test-identical,67846
+chinese,downsample to <= 3 posts/user,2695
+portuguese,clean_full (M2),1241
+portuguese,remove 100 test posts,1141
+portuguese,normalize + drop dup/conflicting/test-identical,1141
+thai,clean_full (M2),1285
+thai,remove 100 test posts,1185
+thai,normalize + drop dup/conflicting/test-identical,1185

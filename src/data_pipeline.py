@@ -7,7 +7,9 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import StratifiedGroupKFold, train_test_split
+
+# Note: this file deliberately uses only pandas + numpy (no scikit-learn), so it runs
+# on machines where scikit-learn/SciPy cannot be loaded.
 
 # --------------------------------------------------------------------------------------
 # Configuration - agreed group settings
@@ -72,6 +74,17 @@ def mask_keywords(text: str, language: str) -> str:
     return text
 
 
+def _stratified_pick(items: np.ndarray, labels: np.ndarray, frac: float) -> set:
+    """Randomly pick `frac` of the items from EACH label (seeded). Returns a set."""
+    rng = np.random.default_rng(SEED)
+    picked = []
+    for lab in sorted(np.unique(labels)):
+        group = np.sort(items[labels == lab])
+        rng.shuffle(group)
+        picked.extend(group[: int(round(len(group) * frac))])
+    return set(picked)
+
+
 # --------------------------------------------------------------------------------------
 # Loading
 # --------------------------------------------------------------------------------------
@@ -130,13 +143,14 @@ def build_language(language: str, data_root: Path = REPO_ROOT,
     # --- 1c. 80/20 train/val, stratified (Chinese: grouped by user) -------------------
     pool = pool.reset_index(drop=True)
     if language == "chinese":
-        sgkf = StratifiedGroupKFold(n_splits=int(round(1 / VAL_SIZE)), shuffle=True,
-                                    random_state=SEED)
-        tr_idx, va_idx = next(sgkf.split(pool, pool["label"], groups=pool["user_id"]))
-        train, val = pool.iloc[tr_idx], pool.iloc[va_idx]
+        # labels are per user, so stratify USERS by label and send 20% of them to val
+        users = pool.groupby("user_id")["label"].first()
+        val_users = _stratified_pick(users.index.to_numpy(), users.to_numpy(), VAL_SIZE)
+        is_val = pool["user_id"].isin(val_users)
     else:
-        train, val = train_test_split(pool, test_size=VAL_SIZE, stratify=pool["label"],
-                                      random_state=SEED)
+        val_rows = _stratified_pick(pool.index.to_numpy(), pool["label"].to_numpy(), VAL_SIZE)
+        is_val = pool.index.isin(val_rows)
+    train, val = pool[~is_val], pool[is_val]
 
     # --- 6. text-only output schema ---------------------------------------------------
     prefix = {"arabic": "ar", "chinese": "zh", "portuguese": "pt", "thai": "th"}[language]
