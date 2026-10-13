@@ -1,0 +1,17 @@
+model,language,variant,split,best_k,accuracy,precision,recall,f1,f1_macro
+KNN (CountVectorizer),Arabic,original,val,9,0.8321,0.8121,0.8832,0.8462,0.8306
+KNN (CountVectorizer),Arabic,original,test,9,0.84,0.7742,0.96,0.8571,0.8377
+KNN (CountVectorizer),Arabic,masked,val,9,0.8302,0.8179,0.8686,0.8425,0.8291
+KNN (CountVectorizer),Arabic,masked,test,9,0.83,0.7705,0.94,0.8468,0.8279
+KNN (CountVectorizer),Chinese,original,val,11,0.6685,0.6435,0.7556,0.6951,0.666
+KNN (CountVectorizer),Chinese,original,test,11,0.79,0.7458,0.88,0.8073,0.7883
+KNN (CountVectorizer),Chinese,masked,val,11,0.6722,0.6458,0.763,0.6995,0.6695
+KNN (CountVectorizer),Chinese,masked,test,11,0.83,0.7619,0.96,0.8496,0.8271
+KNN (CountVectorizer),Portuguese,original,val,3,0.8772,0.5,0.2143,0.3,0.6163
+KNN (CountVectorizer),Portuguese,original,test,3,0.59,0.6957,0.32,0.4384,0.5578
+KNN (CountVectorizer),Portuguese,masked,val,3,0.8904,0.6364,0.25,0.359,0.6495
+KNN (CountVectorizer),Portuguese,masked,test,3,0.6,0.7273,0.32,0.4444,0.566
+KNN (CountVectorizer),Thai,original,val,9,0.8903,0.75,0.2,0.3158,0.6281
+KNN (CountVectorizer),Thai,original,test,9,0.56,1.0,0.12,0.2143,0.4544
+KNN (CountVectorizer),Thai,masked,val,9,0.8903,0.75,0.2,0.3158,0.6281
+KNN (CountVectorizer),Thai,masked,test,9,0.56,1.0,0.12,0.2143,0.4544
