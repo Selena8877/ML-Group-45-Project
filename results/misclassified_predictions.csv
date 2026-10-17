@@ -1,0 +1,441 @@
+model,language,variant,split,id,y_true,y_pred,error_type
+Naive,Arabic,original,test,ar_004,0,1,FP
+Naive,Arabic,original,test,ar_005,0,1,FP
+Naive,Arabic,original,test,ar_006,0,1,FP
+Naive,Arabic,original,test,ar_007,0,1,FP
+Naive,Arabic,original,test,ar_009,0,1,FP
+Naive,Arabic,original,test,ar_010,0,1,FP
+Naive,Arabic,original,test,ar_011,0,1,FP
+Naive,Arabic,original,test,ar_012,0,1,FP
+Naive,Arabic,original,test,ar_014,0,1,FP
+Naive,Arabic,original,test,ar_016,0,1,FP
+Naive,Arabic,original,test,ar_019,0,1,FP
+Naive,Arabic,original,test,ar_020,0,1,FP
+Naive,Arabic,original,test,ar_023,0,1,FP
+Naive,Arabic,original,test,ar_024,0,1,FP
+Naive,Arabic,original,test,ar_026,0,1,FP
+Naive,Arabic,original,test,ar_027,0,1,FP
+Naive,Arabic,original,test,ar_029,0,1,FP
+Naive,Arabic,original,test,ar_031,0,1,FP
+Naive,Arabic,original,test,ar_032,0,1,FP
+Naive,Arabic,original,test,ar_034,0,1,FP
+Naive,Arabic,original,test,ar_036,0,1,FP
+Naive,Arabic,original,test,ar_039,0,1,FP
+Naive,Arabic,original,test,ar_040,0,1,FP
+Naive,Arabic,original,test,ar_041,0,1,FP
+Naive,Arabic,original,test,ar_042,0,1,FP
+Naive,Arabic,original,test,ar_043,0,1,FP
+Naive,Arabic,original,test,ar_045,0,1,FP
+Naive,Arabic,original,test,ar_046,0,1,FP
+Naive,Arabic,original,test,ar_048,0,1,FP
+Naive,Arabic,original,test,ar_050,0,1,FP
+Naive,Arabic,original,test,ar_051,0,1,FP
+Naive,Arabic,original,test,ar_052,0,1,FP
+Naive,Arabic,original,test,ar_053,0,1,FP
+Naive,Arabic,original,test,ar_054,0,1,FP
+Naive,Arabic,original,test,ar_055,0,1,FP
+Naive,Arabic,original,test,ar_057,0,1,FP
+Naive,Arabic,original,test,ar_059,0,1,FP
+Naive,Arabic,original,test,ar_064,0,1,FP
+Naive,Arabic,original,test,ar_067,0,1,FP
+Naive,Arabic,original,test,ar_072,0,1,FP
+Naive,Arabic,original,test,ar_074,0,1,FP
+Naive,Arabic,original,test,ar_078,0,1,FP
+Naive,Arabic,original,test,ar_083,0,1,FP
+Naive,Arabic,original,test,ar_084,0,1,FP
+Naive,Arabic,original,test,ar_085,0,1,FP
+Naive,Arabic,original,test,ar_087,0,1,FP
+Naive,Arabic,original,test,ar_088,0,1,FP
+Naive,Arabic,original,test,ar_089,0,1,FP
+Naive,Arabic,original,test,ar_095,0,1,FP
+Naive,Arabic,original,test,ar_098,0,1,FP
+Naive,Chinese,original,test,zh_004,1,0,FN
+Naive,Chinese,original,test,zh_005,1,0,FN
+Naive,Chinese,original,test,zh_006,1,0,FN
+Naive,Chinese,original,test,zh_007,1,0,FN
+Naive,Chinese,original,test,zh_009,1,0,FN
+Naive,Chinese,original,test,zh_010,1,0,FN
+Naive,Chinese,original,test,zh_011,1,0,FN
+Naive,Chinese,original,test,zh_012,1,0,FN
+Naive,Chinese,original,test,zh_014,1,0,FN
+Naive,Chinese,original,test,zh_016,1,0,FN
+Naive,Chinese,original,test,zh_019,1,0,FN
+Naive,Chinese,original,test,zh_020,1,0,FN
+Naive,Chinese,original,test,zh_023,1,0,FN
+Naive,Chinese,original,test,zh_024,1,0,FN
+Naive,Chinese,original,test,zh_026,1,0,FN
+Naive,Chinese,original,test,zh_027,1,0,FN
+Naive,Chinese,original,test,zh_029,1,0,FN
+Naive,Chinese,original,test,zh_031,1,0,FN
+Naive,Chinese,original,test,zh_032,1,0,FN
+Naive,Chinese,original,test,zh_034,1,0,FN
+Naive,Chinese,original,test,zh_036,1,0,FN
+Naive,Chinese,original,test,zh_039,1,0,FN
+Naive,Chinese,original,test,zh_040,1,0,FN
+Naive,Chinese,original,test,zh_041,1,0,FN
+Naive,Chinese,original,test,zh_042,1,0,FN
+Naive,Chinese,original,test,zh_043,1,0,FN
+Naive,Chinese,original,test,zh_045,1,0,FN
+Naive,Chinese,original,test,zh_046,1,0,FN
+Naive,Chinese,original,test,zh_048,1,0,FN
+Naive,Chinese,original,test,zh_050,1,0,FN
+Naive,Chinese,original,test,zh_051,1,0,FN
+Naive,Chinese,original,test,zh_052,1,0,FN
+Naive,Chinese,original,test,zh_053,1,0,FN
+Naive,Chinese,original,test,zh_054,1,0,FN
+Naive,Chinese,original,test,zh_055,1,0,FN
+Naive,Chinese,original,test,zh_057,1,0,FN
+Naive,Chinese,original,test,zh_059,1,0,FN
+Naive,Chinese,original,test,zh_064,1,0,FN
+Naive,Chinese,original,test,zh_067,1,0,FN
+Naive,Chinese,original,test,zh_072,1,0,FN
+Naive,Chinese,original,test,zh_074,1,0,FN
+Naive,Chinese,original,test,zh_078,1,0,FN
+Naive,Chinese,original,test,zh_083,1,0,FN
+Naive,Chinese,original,test,zh_084,1,0,FN
+Naive,Chinese,original,test,zh_085,1,0,FN
+Naive,Chinese,original,test,zh_087,1,0,FN
+Naive,Chinese,original,test,zh_088,1,0,FN
+Naive,Chinese,original,test,zh_089,1,0,FN
+Naive,Chinese,original,test,zh_095,1,0,FN
+Naive,Chinese,original,test,zh_098,1,0,FN
+Naive,Portuguese,original,test,pt_004,1,0,FN
+Naive,Portuguese,original,test,pt_005,1,0,FN
+Naive,Portuguese,original,test,pt_006,1,0,FN
+Naive,Portuguese,original,test,pt_007,1,0,FN
+Naive,Portuguese,original,test,pt_009,1,0,FN
+Naive,Portuguese,original,test,pt_010,1,0,FN
+Naive,Portuguese,original,test,pt_011,1,0,FN
+Naive,Portuguese,original,test,pt_012,1,0,FN
+Naive,Portuguese,original,test,pt_014,1,0,FN
+Naive,Portuguese,original,test,pt_016,1,0,FN
+Naive,Portuguese,original,test,pt_019,1,0,FN
+Naive,Portuguese,original,test,pt_020,1,0,FN
+Naive,Portuguese,original,test,pt_023,1,0,FN
+Naive,Portuguese,original,test,pt_024,1,0,FN
+Naive,Portuguese,original,test,pt_026,1,0,FN
+Naive,Portuguese,original,test,pt_027,1,0,FN
+Naive,Portuguese,original,test,pt_029,1,0,FN
+Naive,Portuguese,original,test,pt_031,1,0,FN
+Naive,Portuguese,original,test,pt_032,1,0,FN
+Naive,Portuguese,original,test,pt_034,1,0,FN
+Naive,Portuguese,original,test,pt_036,1,0,FN
+Naive,Portuguese,original,test,pt_039,1,0,FN
+Naive,Portuguese,original,test,pt_040,1,0,FN
+Naive,Portuguese,original,test,pt_041,1,0,FN
+Naive,Portuguese,original,test,pt_042,1,0,FN
+Naive,Portuguese,original,test,pt_043,1,0,FN
+Naive,Portuguese,original,test,pt_045,1,0,FN
+Naive,Portuguese,original,test,pt_046,1,0,FN
+Naive,Portuguese,original,test,pt_048,1,0,FN
+Naive,Portuguese,original,test,pt_050,1,0,FN
+Naive,Portuguese,original,test,pt_051,1,0,FN
+Naive,Portuguese,original,test,pt_052,1,0,FN
+Naive,Portuguese,original,test,pt_053,1,0,FN
+Naive,Portuguese,original,test,pt_054,1,0,FN
+Naive,Portuguese,original,test,pt_055,1,0,FN
+Naive,Portuguese,original,test,pt_057,1,0,FN
+Naive,Portuguese,original,test,pt_059,1,0,FN
+Naive,Portuguese,original,test,pt_064,1,0,FN
+Naive,Portuguese,original,test,pt_067,1,0,FN
+Naive,Portuguese,original,test,pt_072,1,0,FN
+Naive,Portuguese,original,test,pt_074,1,0,FN
+Naive,Portuguese,original,test,pt_078,1,0,FN
+Naive,Portuguese,original,test,pt_083,1,0,FN
+Naive,Portuguese,original,test,pt_084,1,0,FN
+Naive,Portuguese,original,test,pt_085,1,0,FN
+Naive,Portuguese,original,test,pt_087,1,0,FN
+Naive,Portuguese,original,test,pt_088,1,0,FN
+Naive,Portuguese,original,test,pt_089,1,0,FN
+Naive,Portuguese,original,test,pt_095,1,0,FN
+Naive,Portuguese,original,test,pt_098,1,0,FN
+Naive,Thai,original,test,th_004,1,0,FN
+Naive,Thai,original,test,th_005,1,0,FN
+Naive,Thai,original,test,th_006,1,0,FN
+Naive,Thai,original,test,th_007,1,0,FN
+Naive,Thai,original,test,th_009,1,0,FN
+Naive,Thai,original,test,th_010,1,0,FN
+Naive,Thai,original,test,th_011,1,0,FN
+Naive,Thai,original,test,th_012,1,0,FN
+Naive,Thai,original,test,th_014,1,0,FN
+Naive,Thai,original,test,th_016,1,0,FN
+Naive,Thai,original,test,th_019,1,0,FN
+Naive,Thai,original,test,th_020,1,0,FN
+Naive,Thai,original,test,th_023,1,0,FN
+Naive,Thai,original,test,th_024,1,0,FN
+Naive,Thai,original,test,th_026,1,0,FN
+Naive,Thai,original,test,th_027,1,0,FN
+Naive,Thai,original,test,th_029,1,0,FN
+Naive,Thai,original,test,th_031,1,0,FN
+Naive,Thai,original,test,th_032,1,0,FN
+Naive,Thai,original,test,th_034,1,0,FN
+Naive,Thai,original,test,th_036,1,0,FN
+Naive,Thai,original,test,th_039,1,0,FN
+Naive,Thai,original,test,th_040,1,0,FN
+Naive,Thai,original,test,th_041,1,0,FN
+Naive,Thai,original,test,th_042,1,0,FN
+Naive,Thai,original,test,th_043,1,0,FN
+Naive,Thai,original,test,th_045,1,0,FN
+Naive,Thai,original,test,th_046,1,0,FN
+Naive,Thai,original,test,th_048,1,0,FN
+Naive,Thai,original,test,th_050,1,0,FN
+Naive,Thai,original,test,th_051,1,0,FN
+Naive,Thai,original,test,th_052,1,0,FN
+Naive,Thai,original,test,th_053,1,0,FN
+Naive,Thai,original,test,th_054,1,0,FN
+Naive,Thai,original,test,th_055,1,0,FN
+Naive,Thai,original,test,th_057,1,0,FN
+Naive,Thai,original,test,th_059,1,0,FN
+Naive,Thai,original,test,th_064,1,0,FN
+Naive,Thai,original,test,th_067,1,0,FN
+Naive,Thai,original,test,th_072,1,0,FN
+Naive,Thai,original,test,th_074,1,0,FN
+Naive,Thai,original,test,th_078,1,0,FN
+Naive,Thai,original,test,th_083,1,0,FN
+Naive,Thai,original,test,th_084,1,0,FN
+Naive,Thai,original,test,th_085,1,0,FN
+Naive,Thai,original,test,th_087,1,0,FN
+Naive,Thai,original,test,th_088,1,0,FN
+Naive,Thai,original,test,th_089,1,0,FN
+Naive,Thai,original,test,th_095,1,0,FN
+Naive,Thai,original,test,th_098,1,0,FN
+KNN (CountVectorizer),Arabic,original,test,ar_005,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_010,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_011,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_024,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_041,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_042,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_043,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_045,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_050,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_053,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_072,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_075,1,0,FN
+KNN (CountVectorizer),Arabic,original,test,ar_084,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_085,0,1,FP
+KNN (CountVectorizer),Arabic,original,test,ar_096,1,0,FN
+KNN (CountVectorizer),Arabic,original,test,ar_098,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_005,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_010,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_011,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_024,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_041,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_042,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_043,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_045,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_050,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_053,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_069,1,0,FN
+KNN (CountVectorizer),Arabic,masked,test,ar_072,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_075,1,0,FN
+KNN (CountVectorizer),Arabic,masked,test,ar_084,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_085,0,1,FP
+KNN (CountVectorizer),Arabic,masked,test,ar_096,1,0,FN
+KNN (CountVectorizer),Arabic,masked,test,ar_098,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_003,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_005,1,0,FN
+KNN (CountVectorizer),Chinese,original,test,zh_008,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_013,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_017,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_033,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_036,1,0,FN
+KNN (CountVectorizer),Chinese,original,test,zh_038,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_057,1,0,FN
+KNN (CountVectorizer),Chinese,original,test,zh_060,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_062,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_066,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_076,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_079,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_087,1,0,FN
+KNN (CountVectorizer),Chinese,original,test,zh_088,1,0,FN
+KNN (CountVectorizer),Chinese,original,test,zh_090,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_091,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_097,0,1,FP
+KNN (CountVectorizer),Chinese,original,test,zh_098,1,0,FN
+KNN (CountVectorizer),Chinese,original,test,zh_100,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_003,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_008,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_013,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_017,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_033,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_036,1,0,FN
+KNN (CountVectorizer),Chinese,masked,test,zh_038,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_060,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_062,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_066,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_076,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_079,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_087,1,0,FN
+KNN (CountVectorizer),Chinese,masked,test,zh_090,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_091,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_097,0,1,FP
+KNN (CountVectorizer),Chinese,masked,test,zh_100,0,1,FP
+KNN (CountVectorizer),Portuguese,original,test,pt_001,0,1,FP
+KNN (CountVectorizer),Portuguese,original,test,pt_003,0,1,FP
+KNN (CountVectorizer),Portuguese,original,test,pt_004,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_005,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_006,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_008,0,1,FP
+KNN (CountVectorizer),Portuguese,original,test,pt_010,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_011,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_016,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_020,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_024,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_027,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_029,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_031,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_032,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_034,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_035,0,1,FP
+KNN (CountVectorizer),Portuguese,original,test,pt_036,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_039,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_041,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_042,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_043,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_044,0,1,FP
+KNN (CountVectorizer),Portuguese,original,test,pt_045,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_046,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_047,0,1,FP
+KNN (CountVectorizer),Portuguese,original,test,pt_048,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_051,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_053,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_055,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_064,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_067,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_071,0,1,FP
+KNN (CountVectorizer),Portuguese,original,test,pt_074,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_083,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_085,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_087,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_088,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_089,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_095,1,0,FN
+KNN (CountVectorizer),Portuguese,original,test,pt_098,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_001,0,1,FP
+KNN (CountVectorizer),Portuguese,masked,test,pt_004,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_005,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_006,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_008,0,1,FP
+KNN (CountVectorizer),Portuguese,masked,test,pt_010,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_011,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_016,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_020,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_024,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_027,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_029,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_031,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_032,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_034,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_035,0,1,FP
+KNN (CountVectorizer),Portuguese,masked,test,pt_036,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_039,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_041,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_042,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_043,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_044,0,1,FP
+KNN (CountVectorizer),Portuguese,masked,test,pt_045,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_046,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_047,0,1,FP
+KNN (CountVectorizer),Portuguese,masked,test,pt_048,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_051,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_053,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_055,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_064,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_067,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_071,0,1,FP
+KNN (CountVectorizer),Portuguese,masked,test,pt_074,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_083,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_085,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_087,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_088,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_089,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_095,1,0,FN
+KNN (CountVectorizer),Portuguese,masked,test,pt_098,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_004,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_006,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_007,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_009,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_010,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_011,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_012,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_016,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_020,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_023,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_024,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_026,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_027,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_029,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_031,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_032,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_034,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_036,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_039,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_040,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_041,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_043,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_045,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_046,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_050,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_051,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_052,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_053,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_054,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_055,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_057,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_059,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_064,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_067,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_072,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_074,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_078,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_083,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_084,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_087,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_088,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_089,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_095,1,0,FN
+KNN (CountVectorizer),Thai,original,test,th_098,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_004,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_006,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_007,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_009,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_010,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_011,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_012,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_016,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_020,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_023,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_024,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_026,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_027,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_029,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_031,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_032,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_034,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_036,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_039,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_040,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_041,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_043,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_045,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_046,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_050,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_051,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_052,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_053,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_054,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_055,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_057,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_059,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_064,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_067,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_072,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_074,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_078,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_083,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_084,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_087,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_088,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_089,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_095,1,0,FN
+KNN (CountVectorizer),Thai,masked,test,th_098,1,0,FN

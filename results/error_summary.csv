@@ -1,0 +1,13 @@
+model,language,variant,TP,TN,FP,FN,total_errors,total_samples
+KNN (CountVectorizer),Arabic,masked,47,36,14,3,17,100
+KNN (CountVectorizer),Arabic,original,48,36,14,2,16,100
+KNN (CountVectorizer),Chinese,masked,48,35,15,2,17,100
+KNN (CountVectorizer),Chinese,original,44,35,15,6,21,100
+KNN (CountVectorizer),Portuguese,masked,16,44,6,34,40,100
+KNN (CountVectorizer),Portuguese,original,16,43,7,34,41,100
+KNN (CountVectorizer),Thai,masked,6,50,0,44,44,100
+KNN (CountVectorizer),Thai,original,6,50,0,44,44,100
+Naive,Arabic,original,50,0,50,0,50,100
+Naive,Chinese,original,0,50,0,50,50,100
+Naive,Portuguese,original,0,50,0,50,50,100
+Naive,Thai,original,0,50,0,50,50,100

@@ -1,0 +1,9 @@
+language,variant,naive_accuracy,knn_accuracy,naive_precision,knn_precision,naive_recall,knn_recall,naive_f1,knn_f1,f1_improvement
+Arabic,original,0.5,0.84,0.5,0.7742,1.0,0.96,0.6667,0.8571,0.1904
+Arabic,masked,0.5,0.83,0.5,0.7705,1.0,0.94,0.6667,0.8468,0.1801
+Chinese,original,0.5,0.79,0.0,0.7458,0.0,0.88,0.0,0.8073,0.8073
+Chinese,masked,0.5,0.83,0.0,0.7619,0.0,0.96,0.0,0.8496,0.8496
+Portuguese,original,0.5,0.59,0.0,0.6957,0.0,0.32,0.0,0.4384,0.4384
+Portuguese,masked,0.5,0.6,0.0,0.7273,0.0,0.32,0.0,0.4444,0.4444
+Thai,original,0.5,0.56,0.0,1.0,0.0,0.12,0.0,0.2143,0.2143
+Thai,masked,0.5,0.56,0.0,1.0,0.0,0.12,0.0,0.2143,0.2143
