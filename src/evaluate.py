@@ -29,10 +29,11 @@ def evaluate_model(y_true, y_pred):
     }
 
 
+
 def bootstrap_confidence_intervals(
     y_true, y_pred, n_bootstrap=2000, seed=SEED
 ):
-    """Calculate 95% confidence intervals by resampling test predictions."""
+    """Calculate stratified 95% bootstrap confidence intervals."""
 
     y_true = np.asarray(y_true)
     y_pred = np.asarray(y_pred)
@@ -40,14 +41,23 @@ def bootstrap_confidence_intervals(
     if len(y_true) != len(y_pred) or len(y_true) == 0:
         raise ValueError("Prediction arrays must have equal, nonzero lengths.")
 
+    if n_bootstrap < 1:
+        raise ValueError("n_bootstrap must be at least 1.")
+
     rng = np.random.default_rng(seed)
     bootstrap_scores = []
 
-    for _ in range(n_bootstrap):
-        indices = rng.integers(0, len(y_true), len(y_true))
+    classes = np.unique(y_true)
+    class_indices = [
+        np.flatnonzero(y_true == label)
+        for label in classes
+    ]
 
-        if len(np.unique(y_true[indices])) < 2:
-            continue
+    for _ in range(n_bootstrap):
+        indices = np.concatenate([
+            rng.choice(idx, size=len(idx), replace=True)
+            for idx in class_indices
+        ])
 
         scores = evaluate_model(
             y_true[indices], y_pred[indices]
@@ -57,7 +67,9 @@ def bootstrap_confidence_intervals(
     intervals = {}
 
     for metric in bootstrap_scores[0]:
-        values = [scores[metric] for scores in bootstrap_scores]
+        values = [
+            scores[metric] for scores in bootstrap_scores
+        ]
 
         intervals[metric] = {
             "lower": float(np.percentile(values, 2.5)),
