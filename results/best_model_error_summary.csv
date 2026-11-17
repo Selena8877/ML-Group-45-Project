@@ -1,0 +1,5 @@
+model,language,TP,TN,FP,FN,fixed_vs_knn,new_errors_vs_knn
+Multinomial Naive Bayes,Arabic,47,43,7,3,10,4
+Multinomial Naive Bayes,Chinese,48,38,12,2,10,3
+Multinomial Naive Bayes,Portuguese,17,47,3,33,13,8
+Multinomial Naive Bayes,Thai,18,47,3,32,14,5
