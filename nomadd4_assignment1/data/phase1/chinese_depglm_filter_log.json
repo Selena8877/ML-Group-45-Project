@@ -1,0 +1,65 @@
+{
+  "source": "https://raw.githubusercontent.com/cocollapsar/DepGLM/main/DW/train.csv",
+  "seed": 42,
+  "dry_run": true,
+  "created_utc": "2026-11-18T22:11:30.667755+00:00",
+  "steps": [
+    {
+      "step": "raw (relabelled)",
+      "rows": 8052,
+      "class_counts": {
+        "normal": 5617,
+        "depression": 2435
+      }
+    },
+    {
+      "step": "deduplicate",
+      "rows": 8036,
+      "class_counts": {
+        "normal": 5601,
+        "depression": 2435
+      },
+      "removed": 16
+    },
+    {
+      "step": "structural clean",
+      "rows": 8036,
+      "class_counts": {
+        "normal": 5601,
+        "depression": 2435
+      },
+      "removed_empty": 0
+    },
+    {
+      "step": "ethics screening",
+      "rows": 7898,
+      "class_counts": {
+        "normal": 5468,
+        "depression": 2430
+      },
+      "removed": 138,
+      "removed_by_reason": {
+        "UNUSABLE": 122,
+        "SPAM": 16
+      }
+    },
+    {
+      "step": "stratified sample",
+      "rows": 4860,
+      "class_counts": {
+        "depression": 2430,
+        "normal": 2430
+      }
+    }
+  ],
+  "warnings": [
+    "Only 2430 depressed available (wanted 2500)"
+  ],
+  "raw_severity_counts": {
+    "0": 5617,
+    "1": 1650,
+    "2": 603,
+    "3": 182
+  },
+  "raw_multiline_posts": 1086
+}
