@@ -1,5 +1,5 @@
 model,language,TP,TN,FP,FN,fixed_vs_knn,new_errors_vs_knn
-Logistic Regression,Arabic,48,47,3,2,12,1
-Logistic Regression,Chinese,47,38,12,3,8,2
-Logistic Regression,Portuguese,23,44,6,27,17,9
+Logistic Regression,Arabic,48,47,3,2,11,1
+Logistic Regression,Chinese,47,38,12,3,3,2
+Logistic Regression,Portuguese,23,44,6,27,17,7
 Logistic Regression,Thai,26,49,1,24,20,1

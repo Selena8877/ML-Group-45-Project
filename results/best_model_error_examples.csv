@@ -1,11 +1,11 @@
 ﻿model,language,id,outcome,y_true,y_pred,knn_pred,has_keyword,text
-Logistic Regression,Arabic,ar_038,FN,1,0,1,False,اللهم ابعد عني كل ضيق اشعر به و كل ما يشغل بالي يارب ارح قلبي و فكري و ارزقني سعاده لا تنتهي🤲🏻
+Logistic Regression,Arabic,ar_038,FN,1,0,0,False,اللهم ابعد عني كل ضيق اشعر به و كل ما يشغل بالي يارب ارح قلبي و فكري و ارزقني سعاده لا تنتهي🤲🏻
 Logistic Regression,Arabic,ar_096,FN,1,0,0,False,هناك نوع من الجهاد لا يعرفه الكثير من الناس وهو جهاد السعاده و هو محاولاتك ان تبقي سعيدا بالرغم من كابه البيئه المحيطه بك
-Logistic Regression,Arabic,ar_043,FP,0,1,1,False,مبسوط من نفسي علشان بقيت اقدر استغني عن حاجات مكنتش متخيل اني اقدر اعيش من غيرها
+Logistic Regression,Arabic,ar_043,FP,0,1,0,False,مبسوط من نفسي علشان بقيت اقدر استغني عن حاجات مكنتش متخيل اني اقدر اعيش من غيرها
 Logistic Regression,Arabic,ar_072,FP,0,1,1,False,دكتوره عندي بكرا مطعوم سينوفارم بتنصحيني اخذه ولا الغي موعدي واستني موعد جديد علي امل يكون فايزر
 Logistic Regression,Arabic,ar_084,FP,0,1,1,False,انا فرحان جدا انه بيلعب في فريق محد يعرفه لانه اصلا لاعب اقل من عادي انشهر بسبب مشاكله
-Logistic Regression,Chinese,zh_005,FN,1,0,0,True,"抑郁 这年头奥特曼都胖,所以我胖也不奇怪吧 [鼓掌]"
-Logistic Regression,Chinese,zh_020,FN,1,0,1,True,"[泪] [泪] 所以大家有事不要憋着,憋久了就容易抑郁 [泪] [泪]"
+Logistic Regression,Chinese,zh_005,FN,1,0,1,True,"抑郁 这年头奥特曼都胖,所以我胖也不奇怪吧 [鼓掌]"
+Logistic Regression,Chinese,zh_020,FN,1,0,0,True,"[泪] [泪] 所以大家有事不要憋着,憋久了就容易抑郁 [泪] [泪]"
 Logistic Regression,Chinese,zh_098,FN,1,0,0,True,"考完扶摇,听着外面的雨声,想着一些事情,心情抑郁 北京·牛栏山地区"
 Logistic Regression,Chinese,zh_008,FP,0,1,1,False,"漫漫人生,谁都不会一路顺遂,每一种向往的生活背后,都有你不曾吃过的苦,不曾流过的泪。别敷衍生活,别惧怕挫折,抓住每分每秒,去努力、去尝试、去改变。你的努力,就是改变人生最大的底气。"
 Logistic Regression,Chinese,zh_013,FP,0,1,1,False,"救命,头痛了几日,食药都唔好,真系辛苦死 [生病]"
@@ -22,8 +22,8 @@ Logistic Regression,Chinese,zh_100,FP,0,1,1,False,北风呼呼从哪来它又呜
 Logistic Regression,Portuguese,pt_005,FN,1,0,0,False,[USER] serio eu vou me matar. eu n posso nem comer por causa dessa bct
 Logistic Regression,Portuguese,pt_010,FN,1,0,0,False,eu falo sobre me matar no twitter tem 30 anos eu n aguento mais falar falar falar e n fazer eu n mudo eu to tentando tudo que da pra mudar mas n consigo entao assim qual o sentido disso tudo
 Logistic Regression,Portuguese,pt_016,FN,1,0,0,False,só queria fechar os olhos e essa bosta toda acabar mas quando acordo isso continua e continua e amanhã é segunda e quero morrer .
-Logistic Regression,Portuguese,pt_019,FN,1,0,1,False,eu sou um completo desastre em todos os aspectos da vida um inútil de verdade (já falaram isso pra mim ) o mundo vai ser um lugar melhor sem mim
-Logistic Regression,Portuguese,pt_023,FN,1,0,1,False,[USER] eu ja so quero morrer tbh porque é que raio achei que seria boa ideia?
+Logistic Regression,Portuguese,pt_019,FN,1,0,0,False,eu sou um completo desastre em todos os aspectos da vida um inútil de verdade (já falaram isso pra mim ) o mundo vai ser um lugar melhor sem mim
+Logistic Regression,Portuguese,pt_023,FN,1,0,0,False,[USER] eu ja so quero morrer tbh porque é que raio achei que seria boa ideia?
 Logistic Regression,Portuguese,pt_024,FN,1,0,0,False,me matar e deixar minha mae triste ou continuar vivendo sendo eu triste? eis a questao
 Logistic Regression,Portuguese,pt_027,FN,1,0,0,False,"quando o lucas foi falar ano passado que eu tava em crise e tentei suicídio, ele tinha me deixando dormindo depois de chegar do hospital, mãe e irmã pediram pra ele não tocar no assunto. minha família ignora minha doença e me ignora sempre que possível"
 Logistic Regression,Portuguese,pt_031,FN,1,0,0,False,[USER] indo cair de cara nas drogas e cometer suicídio antes de eu completar 18
@@ -36,21 +36,21 @@ Logistic Regression,Portuguese,pt_041,FN,1,0,0,False,"gostei da sua motivação 
 Logistic Regression,Portuguese,pt_042,FN,1,0,0,False,talvez minhas aulas voltem dia 10 quero morrer não sei mais socializar tô em uma turma nova vou ficar mais triste ainda mas quero voltar e não quero vou surtar
 Logistic Regression,Portuguese,pt_043,FN,1,0,0,False,meu amor próprio foi violado minha privacidade foi revirada e ainda encontro ainda encontro repetindo em minha mente se não posso ser eu mesmo eu me sentiria melhor morto
 Logistic Regression,Portuguese,pt_048,FN,1,0,0,True,"[USER] [USER] isso é vdd, mas é muito melhor cometer suicidio do que esperar a morte"
-Logistic Regression,Portuguese,pt_050,FN,1,0,1,False,estou bem? não vou estar bem em breve?provavelmente não pretendo me matar? sim vou dizer o porque ou tentar continuar viva? provavelmente não
+Logistic Regression,Portuguese,pt_050,FN,1,0,0,False,estou bem? não vou estar bem em breve?provavelmente não pretendo me matar? sim vou dizer o porque ou tentar continuar viva? provavelmente não
 Logistic Regression,Portuguese,pt_051,FN,1,0,0,False,o suicídio é a última opção. e olha que ironia... as opções estão se esgotando .
 Logistic Regression,Portuguese,pt_053,FN,1,0,0,False,a única solução é acabar com a minha vida e e isso que vou fazer adeus.
 Logistic Regression,Portuguese,pt_054,FN,1,0,1,False,a única coisa que eu quero agora eh me matar de 400 formas diferentes 🙏
 Logistic Regression,Portuguese,pt_055,FN,1,0,0,False,"eu achei que se não me matasse em 2017 nunca mais ia me matar pq não me imaginava passando por momento pior, 2020 e 2021 mostrando que tudo sempre pode piorar"
 Logistic Regression,Portuguese,pt_064,FN,1,0,0,False,hj faz um ano q eu fui liberada do hospital dps t tentar me matar
-Logistic Regression,Portuguese,pt_078,FN,1,0,1,False,maravilha meu pai vai tirar meu celular de novo e meu psicológico está 100% abalado se eu não acabar com minha vida hj...
-Logistic Regression,Portuguese,pt_085,FN,1,0,0,False,eu to tentando nao me matar para de fazer eu me sentir inutil e ter medo dr vc
+Logistic Regression,Portuguese,pt_078,FN,1,0,0,False,maravilha meu pai vai tirar meu celular de novo e meu psicológico está 100% abalado se eu não acabar com minha vida hj...
+Logistic Regression,Portuguese,pt_085,FN,1,0,1,False,eu to tentando nao me matar para de fazer eu me sentir inutil e ter medo dr vc
 Logistic Regression,Portuguese,pt_087,FN,1,0,0,False,vou me matar mano puta que pariu como pode ser tão idiota e filha da puta
 Logistic Regression,Portuguese,pt_098,FN,1,0,0,False,"queria morar em uma casinha no meio do mato sozinha, mudar de nome e dps me matar"
 Logistic Regression,Portuguese,pt_001,FP,0,1,1,False,"quem chorou duas horas sem parar? sim eu, pq minha família vai me matar com cada sintoma diferente que parece :x"
 Logistic Regression,Portuguese,pt_013,FP,0,1,0,False,"acho que estou emagrecendo mais, eu vou morrer e a minha mãe vai me matar"
 Logistic Regression,Portuguese,pt_030,FP,0,1,0,False,"serio, eu já to de saco cheio do colégio e dessa merda toda. esse ano eu me formo e depois disso nunca mais piso em um colégio na vida, vou fugir até da faculdade. não quero me matar de estudar pra la na frente não conseguir ser ""alguem"" na vida."
 Logistic Regression,Portuguese,pt_047,FP,0,1,1,False,minha sandália torou no meio da rua meu deus eu me odeio vou me matar agora
-Logistic Regression,Portuguese,pt_071,FP,0,1,1,False,o centro da sua vida tem q ser vc não outra pessoa se um dia essa pessoa for embora e vc ficar na merda ao ponto de querer morrer .. a culpa vai ser somente sua por ter colocada ela no centro da sua vida.
+Logistic Regression,Portuguese,pt_071,FP,0,1,0,False,o centro da sua vida tem q ser vc não outra pessoa se um dia essa pessoa for embora e vc ficar na merda ao ponto de querer morrer .. a culpa vai ser somente sua por ter colocada ela no centro da sua vida.
 Logistic Regression,Portuguese,pt_090,FP,0,1,0,False,tanta coisa pra fazer hoje e a cólica vem pra me matar derrubar e humilhar
 Logistic Regression,Thai,th_004,FN,1,0,0,False,เพราะฉันคงหมดเวลา ถึงคราวต้องจากลา บนเส้นทางไกลแสนไกล ไม่อาจจะคืนย้อนมา
 Logistic Regression,Thai,th_007,FN,1,0,0,False,กี่ครั้งแล้วที่พยายามไม่หยิบคัตเตอร์และหยิบอย่างอื่นมากรีดแทน เพราะไม่อยากให้เป็นรอยแผลชัด
