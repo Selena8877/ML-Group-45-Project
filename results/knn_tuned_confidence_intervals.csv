@@ -1,0 +1,21 @@
+model,language,metric,lower,upper
+KNN (tuned),Arabic,accuracy,0.78,0.91
+KNN (tuned),Arabic,precision,0.7384426229508197,0.9019607843137255
+KNN (tuned),Arabic,recall,0.82,0.98
+KNN (tuned),Arabic,f1,0.7924528301886793,0.9158878504672897
+KNN (tuned),Arabic,f1_macro,0.7785829307568438,0.90999099909991
+KNN (tuned),Chinese,accuracy,0.77,0.91
+KNN (tuned),Chinese,precision,0.7096277915632755,0.8679245283018868
+KNN (tuned),Chinese,recall,0.86,1.0
+KNN (tuned),Chinese,f1,0.7966101694915254,0.9142857142857143
+KNN (tuned),Chinese,f1_macro,0.767182913250329,0.9092650468797259
+KNN (tuned),Portuguese,accuracy,0.5,0.64
+KNN (tuned),Portuguese,precision,0.5,0.9230769230769231
+KNN (tuned),Portuguese,recall,0.12,0.36
+KNN (tuned),Portuguese,f1,0.2,0.5
+KNN (tuned),Portuguese,f1_macro,0.4221016629319495,0.609375
+KNN (tuned),Thai,accuracy,0.52,0.6002499999999986
+KNN (tuned),Thai,precision,1.0,1.0
+KNN (tuned),Thai,recall,0.04,0.2004999999999973
+KNN (tuned),Thai,f1,0.07692307692307693,0.3340163934426192
+KNN (tuned),Thai,f1_macro,0.37629937629937626,0.5242152881909907

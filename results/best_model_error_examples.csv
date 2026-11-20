@@ -1,96 +1,79 @@
 ﻿model,language,id,outcome,y_true,y_pred,knn_pred,has_keyword,text
-Multinomial Naive Bayes,Arabic,ar_001,FN,1,0,1,False,حزينه وفاقده كل الحنان والحزن في حياتي مطلقه له العنان وكل من شافني اشر بالبنان ويقول هالبنت مليانه كابه بالاطنان
-Multinomial Naive Bayes,Arabic,ar_038,FN,1,0,1,False,اللهم ابعد عني كل ضيق اشعر به و كل ما يشغل بالي يارب ارح قلبي و فكري و ارزقني سعاده لا تنتهي🤲🏻
-Multinomial Naive Bayes,Arabic,ar_096,FN,1,0,0,False,هناك نوع من الجهاد لا يعرفه الكثير من الناس وهو جهاد السعاده و هو محاولاتك ان تبقي سعيدا بالرغم من كابه البيئه المحيطه بك
-Multinomial Naive Bayes,Arabic,ar_010,FP,0,1,1,False,فرحه اول اكله عملتها لوحدي و طلعت حلوه حاسه اني خلاص المفروض اعمل برنامج طبخ .
-Multinomial Naive Bayes,Arabic,ar_043,FP,0,1,1,False,مبسوط من نفسي علشان بقيت اقدر استغني عن حاجات مكنتش متخيل اني اقدر اعيش من غيرها
-Multinomial Naive Bayes,Arabic,ar_048,FP,0,1,0,False,عندما تصيبنا نوائب الدهر وتكسر مجاديف الامل فينا فاننا نهرب اليك لانك الاب الذي لا نشعر بالامان الا بذكره
-Multinomial Naive Bayes,Arabic,ar_050,FP,0,1,1,False,سؤال محيرني من زمان ليه كتير من الناس معتبره الصداقه علاقه رومانسيه واي فيها بيعاملوه كانه انفصال او طلاق
-Multinomial Naive Bayes,Arabic,ar_072,FP,0,1,1,False,دكتوره عندي بكرا مطعوم سينوفارم بتنصحيني اخذه ولا الغي موعدي واستني موعد جديد علي امل يكون فايزر
-Multinomial Naive Bayes,Arabic,ar_078,FP,0,1,0,False,نفسي ربنا يجعلني سبب في مساعده حد حتي لو شخص واحد علي وجه الارض .
-Multinomial Naive Bayes,Arabic,ar_084,FP,0,1,1,False,انا فرحان جدا انه بيلعب في فريق محد يعرفه لانه اصلا لاعب اقل من عادي انشهر بسبب مشاكله
-Multinomial Naive Bayes,Chinese,zh_005,FN,1,0,0,True,"抑郁 这年头奥特曼都胖,所以我胖也不奇怪吧 [鼓掌]"
-Multinomial Naive Bayes,Chinese,zh_020,FN,1,0,1,True,"[泪] [泪] 所以大家有事不要憋着,憋久了就容易抑郁 [泪] [泪]"
-Multinomial Naive Bayes,Chinese,zh_008,FP,0,1,1,False,"漫漫人生,谁都不会一路顺遂,每一种向往的生活背后,都有你不曾吃过的苦,不曾流过的泪。别敷衍生活,别惧怕挫折,抓住每分每秒,去努力、去尝试、去改变。你的努力,就是改变人生最大的底气。"
-Multinomial Naive Bayes,Chinese,zh_013,FP,0,1,1,False,"救命,头痛了几日,食药都唔好,真系辛苦死 [生病]"
-Multinomial Naive Bayes,Chinese,zh_035,FP,0,1,0,False,"在超市里的零零碎碎,妈呀!这些照片也好多啊!哈哈哈哈,慢慢整理! 其实在日本住在居民区里也是不错的选择,超市已经可以让你逛的停不下来,而且周边也有药妆店,东西全价格和市中心的药妆店没有任何区别。第一次觉得住民宿也挺好的! 澳大利亚·悉尼"
-Multinomial Naive Bayes,Chinese,zh_038,FP,0,1,1,False,"出校门,摩托呼啸进学校,气味臭的让旁边的妹子猜烧的是什么汽油,我怀疑烧的是地沟油_(:з」∠)_"
-Multinomial Naive Bayes,Chinese,zh_056,FP,0,1,0,False,一切都会变好 超好 爆好 无敌好 你一定会和喜欢的人结婚的
-Multinomial Naive Bayes,Chinese,zh_060,FP,0,1,1,False,"我刚刚加入了“熊猫守护者”,据说会在陕西秦岭种下真实的竹子哦! 你也快来加入我们,一起为萌萌的熊猫种竹子吧! 熊猫守护者"
-Multinomial Naive Bayes,Chinese,zh_066,FP,0,1,1,False,"大三课真的好多,从早上到晚,周五放假周六补课周天返校,这是回到了高中吧。"
-Multinomial Naive Bayes,Chinese,zh_079,FP,0,1,1,False,"刘海影响颜值巅峰 大学时期和现在,我只想说大学那张那么暗的光线我怎么拍的下去!还有那齐不 [赞] 齐斜不斜的刘海是我自己剪的 |温州·罗阳..."
-Multinomial Naive Bayes,Chinese,zh_090,FP,0,1,1,False,"一定要去学校,学校能获得机会和自由远比现在多的多。"
-Multinomial Naive Bayes,Chinese,zh_091,FP,0,1,1,False,“以前觉得自己的性格一定能和很多人合的来 什么样的朋友都能结交 后来明白交朋友或许不难 难的是变成知己 人与人之间真的有磁场这回事 一接触就能感觉出来 有些人能和你一见如故 有些人永远不会深交 不是不好 只是磁场不合 所以能遇到一拍即合的人真的挺幸运的 且行且珍惜”
-Multinomial Naive Bayes,Chinese,zh_097,FP,0,1,1,False,"在电影频道又看了一遍滚蛋吧肿瘤君,觉得自己泪点低到可怕。第一次看的时候哭瞎,这次再哭瞎。严肃推荐这部电影,因为熊顿和朋友们的光头,熊顿爸爸买薯片,妈妈织毛衣,以及你不是我,你不会明白你对我的意义。人生只有在经历过、爱过、坚强过、战胜过自己才算没有白活,因为人生就是拿来爱与被爱的。"
-Multinomial Naive Bayes,Chinese,zh_100,FP,0,1,1,False,北风呼呼从哪来它又呜呜向哪去 星星冷的眨眼睛为什么它不穿棉衣
-Multinomial Naive Bayes,Portuguese,pt_004,FN,1,0,0,False,queria poder ter uma forma simples de me despedir dos meus amigos de uma maneira que eles não percebam oque pretendo fazer. a minha carta de suicídio tá pronta e nela eu peço perdão a poucas pessoas. outras eu agradeço e outras eu agradeço por me fazerem chegar a isto
-Multinomial Naive Bayes,Portuguese,pt_005,FN,1,0,0,False,[USER] serio eu vou me matar. eu n posso nem comer por causa dessa bct
-Multinomial Naive Bayes,Portuguese,pt_006,FN,1,0,0,False,na minha carta de suicídio eu com certeza citaria o meu primo. sempre esfregam na minha cara que ele se sai melhor em tudo. que entrou na escola que eu não consegui entrar. que fez não sei o que e pa. pena que não poderia ver a cara de bosta deles lendo essa porra. desgraçados
-Multinomial Naive Bayes,Portuguese,pt_010,FN,1,0,0,False,eu falo sobre me matar no twitter tem 30 anos eu n aguento mais falar falar falar e n fazer eu n mudo eu to tentando tudo que da pra mudar mas n consigo entao assim qual o sentido disso tudo
-Multinomial Naive Bayes,Portuguese,pt_014,FN,1,0,1,False,"eu vou me matar. não sei com o que e não sei de que maneira, mas eu vou me matar."
-Multinomial Naive Bayes,Portuguese,pt_016,FN,1,0,0,False,só queria fechar os olhos e essa bosta toda acabar mas quando acordo isso continua e continua e amanhã é segunda e quero morrer .
-Multinomial Naive Bayes,Portuguese,pt_019,FN,1,0,1,False,eu sou um completo desastre em todos os aspectos da vida um inútil de verdade (já falaram isso pra mim ) o mundo vai ser um lugar melhor sem mim
-Multinomial Naive Bayes,Portuguese,pt_023,FN,1,0,1,False,[USER] eu ja so quero morrer tbh porque é que raio achei que seria boa ideia?
-Multinomial Naive Bayes,Portuguese,pt_024,FN,1,0,0,False,me matar e deixar minha mae triste ou continuar vivendo sendo eu triste? eis a questao
-Multinomial Naive Bayes,Portuguese,pt_027,FN,1,0,0,False,"quando o lucas foi falar ano passado que eu tava em crise e tentei suicídio, ele tinha me deixando dormindo depois de chegar do hospital, mãe e irmã pediram pra ele não tocar no assunto. minha família ignora minha doença e me ignora sempre que possível"
-Multinomial Naive Bayes,Portuguese,pt_029,FN,1,0,0,False,eu nao aguento mais ele pelo amor de deus para de acabar com a minha vida
-Multinomial Naive Bayes,Portuguese,pt_031,FN,1,0,0,False,[USER] indo cair de cara nas drogas e cometer suicídio antes de eu completar 18
-Multinomial Naive Bayes,Portuguese,pt_032,FN,1,0,0,False,sei que é egoísmo da minha parte querer isso por causa de umas pessoas que gostam de mim e precisam mas é difícil sabe isso tudo. esse desânimo a vontade constante de querer morrer
-Multinomial Naive Bayes,Portuguese,pt_034,FN,1,0,0,False,às vezes eu acho que não vale a pena viver . o mundo só te decepciona e te coloca pra baixo as pessoas não prestam o que a gente ganha com isso tudo afinal? qual o propósito? não vejo mais nenhum
-Multinomial Naive Bayes,Portuguese,pt_036,FN,1,0,0,False,vi tão sublime a chuva caindo e não pude toca-la a sensação de vida que acompanha a chuva me foi tirada agora só me resta a sensação de estar morto ... é agoniante morrer enquanto ainda respiraacordando todas manhãs vivo dentro do mesmo corpo que pode ser intitulado de prisão..
-Multinomial Naive Bayes,Portuguese,pt_039,FN,1,0,0,False,que caralho de tem comigo vsf fica crucificando ja quero morrer e ai ficam ai botando lenhw me apedrejando que porra
-Multinomial Naive Bayes,Portuguese,pt_040,FN,1,0,1,False,tive uma crise fudida ontem e agr minha mãe n quer me deixar sozinha achando que eu vou me matar❤🥰😍🤩😝🌹🥳
-Multinomial Naive Bayes,Portuguese,pt_041,FN,1,0,0,False,"gostei da sua motivação mas eu estou no fundo do poço, posso dar até algumas risadas, mas aqui, está marcado que preciso me matar"
-Multinomial Naive Bayes,Portuguese,pt_042,FN,1,0,0,False,talvez minhas aulas voltem dia 10 quero morrer não sei mais socializar tô em uma turma nova vou ficar mais triste ainda mas quero voltar e não quero vou surtar
-Multinomial Naive Bayes,Portuguese,pt_043,FN,1,0,0,False,meu amor próprio foi violado minha privacidade foi revirada e ainda encontro ainda encontro repetindo em minha mente se não posso ser eu mesmo eu me sentiria melhor morto
-Multinomial Naive Bayes,Portuguese,pt_045,FN,1,0,0,False,às vezes dá tanta vontade de me cortar outra vez mas realmente não vai fazer a diferença eu tinha é que me matar
-Multinomial Naive Bayes,Portuguese,pt_048,FN,1,0,0,True,"[USER] [USER] isso é vdd, mas é muito melhor cometer suicidio do que esperar a morte"
-Multinomial Naive Bayes,Portuguese,pt_050,FN,1,0,1,False,estou bem? não vou estar bem em breve?provavelmente não pretendo me matar? sim vou dizer o porque ou tentar continuar viva? provavelmente não
-Multinomial Naive Bayes,Portuguese,pt_051,FN,1,0,0,False,o suicídio é a última opção. e olha que ironia... as opções estão se esgotando .
-Multinomial Naive Bayes,Portuguese,pt_055,FN,1,0,0,False,"eu achei que se não me matasse em 2017 nunca mais ia me matar pq não me imaginava passando por momento pior, 2020 e 2021 mostrando que tudo sempre pode piorar"
-Multinomial Naive Bayes,Portuguese,pt_064,FN,1,0,0,False,hj faz um ano q eu fui liberada do hospital dps t tentar me matar
-Multinomial Naive Bayes,Portuguese,pt_078,FN,1,0,1,False,maravilha meu pai vai tirar meu celular de novo e meu psicológico está 100% abalado se eu não acabar com minha vida hj...
-Multinomial Naive Bayes,Portuguese,pt_083,FN,1,0,0,False,eu to muito ansiosa essas semanas vou me matar em crise até meu pai vir
-Multinomial Naive Bayes,Portuguese,pt_085,FN,1,0,0,False,eu to tentando nao me matar para de fazer eu me sentir inutil e ter medo dr vc
-Multinomial Naive Bayes,Portuguese,pt_087,FN,1,0,0,False,vou me matar mano puta que pariu como pode ser tão idiota e filha da puta
-Multinomial Naive Bayes,Portuguese,pt_088,FN,1,0,0,False,faz uns 5 dias que eu não penso em me matar será essa uma evolução???
-Multinomial Naive Bayes,Portuguese,pt_089,FN,1,0,0,False,"eu só to na avla há uma hora e meia, mas se alguma coisa acontecer com eles eu mato todos os envolvidos e depois cometo suicídio."
-Multinomial Naive Bayes,Portuguese,pt_098,FN,1,0,0,False,"queria morar em uma casinha no meio do mato sozinha, mudar de nome e dps me matar"
-Multinomial Naive Bayes,Portuguese,pt_013,FP,0,1,0,False,"acho que estou emagrecendo mais, eu vou morrer e a minha mãe vai me matar"
-Multinomial Naive Bayes,Portuguese,pt_030,FP,0,1,0,False,"serio, eu já to de saco cheio do colégio e dessa merda toda. esse ano eu me formo e depois disso nunca mais piso em um colégio na vida, vou fugir até da faculdade. não quero me matar de estudar pra la na frente não conseguir ser ""alguem"" na vida."
-Multinomial Naive Bayes,Portuguese,pt_047,FP,0,1,1,False,minha sandália torou no meio da rua meu deus eu me odeio vou me matar agora
-Multinomial Naive Bayes,Thai,th_004,FN,1,0,0,False,เพราะฉันคงหมดเวลา ถึงคราวต้องจากลา บนเส้นทางไกลแสนไกล ไม่อาจจะคืนย้อนมา
-Multinomial Naive Bayes,Thai,th_006,FN,1,0,0,False,ไม่รู้จะอดทนไปเพื่ออะไรแล้ว ต่อให้เราดีขึ้น ชีวิตเราจะดีขึ้นจริงหรอ? ต่อให้เราพยายามมากขึ้น มันจะมีความหมายงั้นหรอ? ไม่จริงทั้งหมดนั่นแหละ นั่นคือเหตุผลที่ฉันอยากหายไปจากโลกใบนี้
-Multinomial Naive Bayes,Thai,th_007,FN,1,0,0,False,กี่ครั้งแล้วที่พยายามไม่หยิบคัตเตอร์และหยิบอย่างอื่นมากรีดแทน เพราะไม่อยากให้เป็นรอยแผลชัด
-Multinomial Naive Bayes,Thai,th_010,FN,1,0,0,False,"คุณยมทูตคะ ""อะไร"" ""หนูมีความสุขจังเลยค่ะ"" ""ทั้งๆที่เธอตายเนี้ยนะ"" ""ค่ะ หนูรู้สึกเหมือนได้ออกมายังโลกที่มีความสุขกว่าโลกที่ หนูเคยอยู่ ได้ปลดปล่อยความรู้แย่ๆออกมา "" ""... (เธออาจเป็นวิญญาณตนแรกที่บ้าบอที่สุด)"""
-Multinomial Naive Bayes,Thai,th_011,FN,1,0,0,False,มาร้องไห้ มากอดกูตอนกูจะตายมันก็ไม่ได้อะไรหรอก
-Multinomial Naive Bayes,Thai,th_016,FN,1,0,0,False,มันไม่มีใครอยากมานั่งกรีดแขนตัวเองซ้ําๆเพื่อให้คนอื่นหันมามอบความรักให้หรอกนะที่ทําเพราะเรารู้ไงว่าไอ้แผลกายข้างนอกนี่มันไม่เคยเจ็บเท่าแผลในใจเลยสักครั้งคุณไม่ต้องสนใจหรอกเราก็ไม่ได้ต้องการไม่ต้องสงสาร และไม่ต้องซ้ําเติม ขอแค่นี้เอง
-Multinomial Naive Bayes,Thai,th_019,FN,1,0,1,False,สับสนกับความรู้สึกตอนนี้มากๆเลยอ่ะ รักษามา3ปีตอนนี้เหมืนมันจะดีขึ้นเริ่มมีภาพสิ่งที่อยากทําในหัวลางๆ แต่ในความรู้สึกนึงก็คือไม่ได้อยากจะอยู่ในโลกนี้ขนาดนั้น
-Multinomial Naive Bayes,Thai,th_020,FN,1,0,0,False,ถ้าเราบอกว่าเราอ่อนแอ เรายอมแพ้ มันจะสามารถจบทุกอย่างได้ไหมอะ เพราะถ้าได้เราจะทํา ในเมื่อสิ่งที่เป็นอยู่ตอนนี้เราไม่มีความสุขเลย
-Multinomial Naive Bayes,Thai,th_023,FN,1,0,0,False,ความเศร้ากัดกินฉันในทุกวัน รอวันที่มันจะกัดกินลมหายใจสุดท้ายของฉันแค่นั้นเอง.
-Multinomial Naive Bayes,Thai,th_024,FN,1,0,0,False,"‘ I’m not ok, I feel so scattered... ‘ ... ฉันไม่โอเคเลย, รู้สึกแหลกสลายเป็นเสี่ยงๆ"
-Multinomial Naive Bayes,Thai,th_026,FN,1,0,0,False,ฉันดีใจที่ได้ออกไปพักผ่อน แต่ในขณะเดียวกันการพักผ่อนของฉันคือการนอนหลับไปแล้วไม่ต้องตื่นมาอีกเลย มากกว่า...
-Multinomial Naive Bayes,Thai,th_031,FN,1,0,0,False,ถ้าวันนี้ฉันตาย ฉันไม่เสียดายอะไรเลยเพาะนั้นคือความสุขสุดท้ายที่มีแล้วจริงๆ
-Multinomial Naive Bayes,Thai,th_034,FN,1,0,0,False,ทําร้ายตัวเองก็ไม่เห็นตายนิ รู้สึกดีด้วย ทําไมถึงจะไม่ทําละ ในเมื่อสิ่งที่เราทําได้มันมีแค่นี้
-Multinomial Naive Bayes,Thai,th_036,FN,1,0,0,False,ถ้าวันใดวันหนึ่งฉันเลือกที่จะตาย ขอให้รู้ไว้ว่าฉันเลือกเพราะอยากให้คนรอบข้างสบาย ฉันไม่อยากเป็นตัวปัญหา ไม่อยากเป็นภาระ ทําให้ทุกๆคนรอบตัวฉันนั้นลําบาก ฉันจะไม่เรียกร้องอะไร ฉันจะตายไปอย่างเงียบๆ ถ้าไม่มีฉันพวกคุณจะสบาย :)
-Multinomial Naive Bayes,Thai,th_040,FN,1,0,0,False,เค้าบอกว่าจงสร้างความสุขให้ตัวเราเอง555ด้วยการกรีดเเขนตัวเองนะหรอ? ใช่ฉันมีความสุขที่ได้ระบายมันออกมา..
-Multinomial Naive Bayes,Thai,th_041,FN,1,0,0,False,ทุกคนพยายามช่วย ทุกคนตามหา ทุกคนบอกเข้าใจ แต่รู้มั้ยว่าเรามองไม่เห็นตรงนั้นเลย หลุมดํานี้มันมองไม่เห็นอะไร มันมืดมนไปหมด :)
-Multinomial Naive Bayes,Thai,th_042,FN,1,0,1,False,ทําไมความคิดไร้ค่า ความคิดอยากตาย อยากหายไปมันเข้มข้นขึ้นไปทุกทีนะ??
-Multinomial Naive Bayes,Thai,th_043,FN,1,0,0,False,ไม่รู้ทําไม.. ถึงรู้สึกได้ยินเสียงในหัวบอกให้ไปตายทุกที
-Multinomial Naive Bayes,Thai,th_045,FN,1,0,0,False,อย่าเอาการเรียน ครอบครัว เพื่อน มากดดันเราได้ไหม แค่นี้ก็เหนื่อยจนอยากตายแล้วนะ
-Multinomial Naive Bayes,Thai,th_050,FN,1,0,0,False,เลือดคมๆกับมีดแดงๆ???? พอจะทําให้ฉันรู้สึกดีขึ้นบ้างในตอนนี้
-Multinomial Naive Bayes,Thai,th_051,FN,1,0,0,False,ภาระ=กู ส่วนเกิน=กู ขยะ=กู มึงจะเกิดมาทําไม...
-Multinomial Naive Bayes,Thai,th_052,FN,1,0,0,False,พวกแกแค่เห็นรอยยิ้มที่ฉันยิ้ม พวกแกคงคิดว่าฉันปกติดี แต่ไม่เลย... ฉันไม่เคยจะยิ้มออกมาจากใจจริงของฉันเลยด้วยซ้ํา... ฉันอยากตาย อยากตายตลอดเวลา... ฉันอยากตายแม้กระทั่งตอนที่ฉันยิ้มให้กับพวกแกทุกคน...
-Multinomial Naive Bayes,Thai,th_053,FN,1,0,0,False,มันคือการระบายสิ่งที่อยู่ในใจออกมา มันเป็นสิ่งที่ไม่มีใครเข้าใจได้ มันคือความเจ็บปวดภายในใจที่ได้ระบายออกมาในรูปแบบของการทําร้ายตัวเอง ถึงจะรู้ว่าไม่ควรทํา แต่ตอนทํามันกลับรู้สึกดีมากนะ
-Multinomial Naive Bayes,Thai,th_057,FN,1,0,0,False,ถ้าวันไหนเราไม่อยู่แล้ว ไม่ต้องเสียใจ ถือว่าทางนั้นเป็นทางที่เราคิดว่าทําแบบนี้มันดีที่สุดแล้ว
-Multinomial Naive Bayes,Thai,th_059,FN,1,0,0,False,กูเกิดมาเพื่อไม่มีใครเข้าใจ อยากตายแต่ทําไรไม่ได้ พ่อแม่ทะเลาะกัน ความสัมพันธ์ความรักไม่สมหวัง เกิดมาเพื่อผิดหวัง พบเจอแต่ความชิปหาย เหนื่อย อยากตาย
-Multinomial Naive Bayes,Thai,th_064,FN,1,0,0,False,เเค่อยากตายโดยที่ไม่สร้างปัญหาไว้ให้กับคนข้างหลังเเละไม่มีผลกระทบต่อใคร :(
-Multinomial Naive Bayes,Thai,th_067,FN,1,0,0,False,ห้องแคบๆ ห้องมืดๆ มีแค่ฉันและน้ําตา และความรู้สึกที่หนักอึ้งไปหมด ไม่มีคําพูด ไม่มีเสียงหัวเราะ ไม่มีรอยยิ้ม หลับลง และตื่นขึ้นมาอีกวัน และหลายครั้งที่ฉันไม่อยากตื่นพบวันใหม่ I always wanna die (sometime)
-Multinomial Naive Bayes,Thai,th_074,FN,1,0,0,False,ทําไมอยู่ๆก็ดิ่ง ดิ่งแบบไม่มีสาเหตุดิ่งจนแทบจะคุมตัวเองไม่ได้มันแย่จังแย่จนอยากจะบีบึอตัวเองให้ตายแต่ก็ทําได้แค่ให้หายใจไม่ออกชั่วคราวแค่นั้น
-Multinomial Naive Bayes,Thai,th_083,FN,1,0,0,False,แม่งเอ้ยย ทําไมกูไม่ตายๆไปตั้งแต่เข้ารพ.รอบนั้นวะ กูฟื้นมาทําไมวะ ทําไมวะ แม่ง กูเกลียดความคาดหวัง
-Multinomial Naive Bayes,Thai,th_087,FN,1,0,0,False,ผูกคอตายก็แล้ว กินยาเกินขนาดก็แล้ว เอายามากินกับเหล้าก็แล้ว ถ้าไม่มีใครเอาของมีคมในห้องไปซ่อน ป่านนี้คงได้ตายสมใจแล้วหล่ะ เป็นตัวน่ารังเกียจ สร้างปัญหา การถูกข่มขืนตอนเด็ก ทําให้เราป่วยจนถึงวันนี้ และมันหนักขึ้นเพราะแรงกดดันทางสังคม งาน เงิน ครอบครัว อยู่ไม่ไหวแล้ว
-Multinomial Naive Bayes,Thai,th_089,FN,1,0,0,False,ก่อนนอนก็เศร้า ตื่นมาก็เศร้า อยู่ๆก็ร้องไห้ บางครั้งก็อยากตาย เป็นเหี้ยไรนักหนาก็ไม่รู้??
-Multinomial Naive Bayes,Thai,th_098,FN,1,0,0,False,มันถึงจุดที่ทนไม่ไหว ก็ต้องการการปลดปล่อย คิดว่าวันหนึ่งเราจะไปโดยที่ไม่ต้องโพสต์ต้องลานั่นคือสุดแล้ว ไม่มีกําลังใจที่จะอยู่แล้ว
-Multinomial Naive Bayes,Thai,th_008,FP,0,1,0,False,เรารู้ว่าเราจิตไม่ปกติ เพราะใครกันล่ะที่ทําให้เราเป็นแบบนี้
-Multinomial Naive Bayes,Thai,th_022,FP,0,1,0,False,ทําไมถึงคิดว่าการบุลลี่เป็นเรื่องปกติ ทั้งที่มันทําลายชีวิตคนไปหลายคนแล้ว
-Multinomial Naive Bayes,Thai,th_062,FP,0,1,0,False,เห็นมีแต่คนอยากเป็นโรคบ้าบอนี้... แลกกับเรามั้ยเราไม่อยากเป็นเลยวะ...
+Logistic Regression,Arabic,ar_038,FN,1,0,1,False,اللهم ابعد عني كل ضيق اشعر به و كل ما يشغل بالي يارب ارح قلبي و فكري و ارزقني سعاده لا تنتهي🤲🏻
+Logistic Regression,Arabic,ar_096,FN,1,0,0,False,هناك نوع من الجهاد لا يعرفه الكثير من الناس وهو جهاد السعاده و هو محاولاتك ان تبقي سعيدا بالرغم من كابه البيئه المحيطه بك
+Logistic Regression,Arabic,ar_043,FP,0,1,1,False,مبسوط من نفسي علشان بقيت اقدر استغني عن حاجات مكنتش متخيل اني اقدر اعيش من غيرها
+Logistic Regression,Arabic,ar_072,FP,0,1,1,False,دكتوره عندي بكرا مطعوم سينوفارم بتنصحيني اخذه ولا الغي موعدي واستني موعد جديد علي امل يكون فايزر
+Logistic Regression,Arabic,ar_084,FP,0,1,1,False,انا فرحان جدا انه بيلعب في فريق محد يعرفه لانه اصلا لاعب اقل من عادي انشهر بسبب مشاكله
+Logistic Regression,Chinese,zh_005,FN,1,0,0,True,"抑郁 这年头奥特曼都胖,所以我胖也不奇怪吧 [鼓掌]"
+Logistic Regression,Chinese,zh_020,FN,1,0,1,True,"[泪] [泪] 所以大家有事不要憋着,憋久了就容易抑郁 [泪] [泪]"
+Logistic Regression,Chinese,zh_098,FN,1,0,0,True,"考完扶摇,听着外面的雨声,想着一些事情,心情抑郁 北京·牛栏山地区"
+Logistic Regression,Chinese,zh_008,FP,0,1,1,False,"漫漫人生,谁都不会一路顺遂,每一种向往的生活背后,都有你不曾吃过的苦,不曾流过的泪。别敷衍生活,别惧怕挫折,抓住每分每秒,去努力、去尝试、去改变。你的努力,就是改变人生最大的底气。"
+Logistic Regression,Chinese,zh_013,FP,0,1,1,False,"救命,头痛了几日,食药都唔好,真系辛苦死 [生病]"
+Logistic Regression,Chinese,zh_033,FP,0,1,1,False,"今天和老妈做了一天的手工...中午开始做包子 晚上做面包...边做还边吃 [允悲] [允悲] 而且太忙了连运动都没做...只跳了早晚常规的跳绳 [笑cry] 今天吃的有点多...晚上还喝了鱼汤,💗鱼真的很新鲜,妈妈说感觉比过去在菜场买的还好,我说当然啊 现在都是直接捞了就送来武汉当然新鲜"
+Logistic Regression,Chinese,zh_038,FP,0,1,1,False,"出校门,摩托呼啸进学校,气味臭的让旁边的妹子猜烧的是什么汽油,我怀疑烧的是地沟油_(:з」∠)_"
+Logistic Regression,Chinese,zh_056,FP,0,1,0,False,一切都会变好 超好 爆好 无敌好 你一定会和喜欢的人结婚的
+Logistic Regression,Chinese,zh_060,FP,0,1,1,False,"我刚刚加入了“熊猫守护者”,据说会在陕西秦岭种下真实的竹子哦! 你也快来加入我们,一起为萌萌的熊猫种竹子吧! 熊猫守护者"
+Logistic Regression,Chinese,zh_066,FP,0,1,1,False,"大三课真的好多,从早上到晚,周五放假周六补课周天返校,这是回到了高中吧。"
+Logistic Regression,Chinese,zh_079,FP,0,1,1,False,"刘海影响颜值巅峰 大学时期和现在,我只想说大学那张那么暗的光线我怎么拍的下去!还有那齐不 [赞] 齐斜不斜的刘海是我自己剪的 |温州·罗阳..."
+Logistic Regression,Chinese,zh_090,FP,0,1,1,False,"一定要去学校,学校能获得机会和自由远比现在多的多。"
+Logistic Regression,Chinese,zh_091,FP,0,1,1,False,“以前觉得自己的性格一定能和很多人合的来 什么样的朋友都能结交 后来明白交朋友或许不难 难的是变成知己 人与人之间真的有磁场这回事 一接触就能感觉出来 有些人能和你一见如故 有些人永远不会深交 不是不好 只是磁场不合 所以能遇到一拍即合的人真的挺幸运的 且行且珍惜”
+Logistic Regression,Chinese,zh_097,FP,0,1,1,False,"在电影频道又看了一遍滚蛋吧肿瘤君,觉得自己泪点低到可怕。第一次看的时候哭瞎,这次再哭瞎。严肃推荐这部电影,因为熊顿和朋友们的光头,熊顿爸爸买薯片,妈妈织毛衣,以及你不是我,你不会明白你对我的意义。人生只有在经历过、爱过、坚强过、战胜过自己才算没有白活,因为人生就是拿来爱与被爱的。"
+Logistic Regression,Chinese,zh_100,FP,0,1,1,False,北风呼呼从哪来它又呜呜向哪去 星星冷的眨眼睛为什么它不穿棉衣
+Logistic Regression,Portuguese,pt_005,FN,1,0,0,False,[USER] serio eu vou me matar. eu n posso nem comer por causa dessa bct
+Logistic Regression,Portuguese,pt_010,FN,1,0,0,False,eu falo sobre me matar no twitter tem 30 anos eu n aguento mais falar falar falar e n fazer eu n mudo eu to tentando tudo que da pra mudar mas n consigo entao assim qual o sentido disso tudo
+Logistic Regression,Portuguese,pt_016,FN,1,0,0,False,só queria fechar os olhos e essa bosta toda acabar mas quando acordo isso continua e continua e amanhã é segunda e quero morrer .
+Logistic Regression,Portuguese,pt_019,FN,1,0,1,False,eu sou um completo desastre em todos os aspectos da vida um inútil de verdade (já falaram isso pra mim ) o mundo vai ser um lugar melhor sem mim
+Logistic Regression,Portuguese,pt_023,FN,1,0,1,False,[USER] eu ja so quero morrer tbh porque é que raio achei que seria boa ideia?
+Logistic Regression,Portuguese,pt_024,FN,1,0,0,False,me matar e deixar minha mae triste ou continuar vivendo sendo eu triste? eis a questao
+Logistic Regression,Portuguese,pt_027,FN,1,0,0,False,"quando o lucas foi falar ano passado que eu tava em crise e tentei suicídio, ele tinha me deixando dormindo depois de chegar do hospital, mãe e irmã pediram pra ele não tocar no assunto. minha família ignora minha doença e me ignora sempre que possível"
+Logistic Regression,Portuguese,pt_031,FN,1,0,0,False,[USER] indo cair de cara nas drogas e cometer suicídio antes de eu completar 18
+Logistic Regression,Portuguese,pt_032,FN,1,0,0,False,sei que é egoísmo da minha parte querer isso por causa de umas pessoas que gostam de mim e precisam mas é difícil sabe isso tudo. esse desânimo a vontade constante de querer morrer
+Logistic Regression,Portuguese,pt_034,FN,1,0,0,False,às vezes eu acho que não vale a pena viver . o mundo só te decepciona e te coloca pra baixo as pessoas não prestam o que a gente ganha com isso tudo afinal? qual o propósito? não vejo mais nenhum
+Logistic Regression,Portuguese,pt_036,FN,1,0,0,False,vi tão sublime a chuva caindo e não pude toca-la a sensação de vida que acompanha a chuva me foi tirada agora só me resta a sensação de estar morto ... é agoniante morrer enquanto ainda respiraacordando todas manhãs vivo dentro do mesmo corpo que pode ser intitulado de prisão..
+Logistic Regression,Portuguese,pt_039,FN,1,0,0,False,que caralho de tem comigo vsf fica crucificando ja quero morrer e ai ficam ai botando lenhw me apedrejando que porra
+Logistic Regression,Portuguese,pt_040,FN,1,0,1,False,tive uma crise fudida ontem e agr minha mãe n quer me deixar sozinha achando que eu vou me matar❤🥰😍🤩😝🌹🥳
+Logistic Regression,Portuguese,pt_041,FN,1,0,0,False,"gostei da sua motivação mas eu estou no fundo do poço, posso dar até algumas risadas, mas aqui, está marcado que preciso me matar"
+Logistic Regression,Portuguese,pt_042,FN,1,0,0,False,talvez minhas aulas voltem dia 10 quero morrer não sei mais socializar tô em uma turma nova vou ficar mais triste ainda mas quero voltar e não quero vou surtar
+Logistic Regression,Portuguese,pt_043,FN,1,0,0,False,meu amor próprio foi violado minha privacidade foi revirada e ainda encontro ainda encontro repetindo em minha mente se não posso ser eu mesmo eu me sentiria melhor morto
+Logistic Regression,Portuguese,pt_048,FN,1,0,0,True,"[USER] [USER] isso é vdd, mas é muito melhor cometer suicidio do que esperar a morte"
+Logistic Regression,Portuguese,pt_050,FN,1,0,1,False,estou bem? não vou estar bem em breve?provavelmente não pretendo me matar? sim vou dizer o porque ou tentar continuar viva? provavelmente não
+Logistic Regression,Portuguese,pt_051,FN,1,0,0,False,o suicídio é a última opção. e olha que ironia... as opções estão se esgotando .
+Logistic Regression,Portuguese,pt_053,FN,1,0,0,False,a única solução é acabar com a minha vida e e isso que vou fazer adeus.
+Logistic Regression,Portuguese,pt_054,FN,1,0,1,False,a única coisa que eu quero agora eh me matar de 400 formas diferentes 🙏
+Logistic Regression,Portuguese,pt_055,FN,1,0,0,False,"eu achei que se não me matasse em 2017 nunca mais ia me matar pq não me imaginava passando por momento pior, 2020 e 2021 mostrando que tudo sempre pode piorar"
+Logistic Regression,Portuguese,pt_064,FN,1,0,0,False,hj faz um ano q eu fui liberada do hospital dps t tentar me matar
+Logistic Regression,Portuguese,pt_078,FN,1,0,1,False,maravilha meu pai vai tirar meu celular de novo e meu psicológico está 100% abalado se eu não acabar com minha vida hj...
+Logistic Regression,Portuguese,pt_085,FN,1,0,0,False,eu to tentando nao me matar para de fazer eu me sentir inutil e ter medo dr vc
+Logistic Regression,Portuguese,pt_087,FN,1,0,0,False,vou me matar mano puta que pariu como pode ser tão idiota e filha da puta
+Logistic Regression,Portuguese,pt_098,FN,1,0,0,False,"queria morar em uma casinha no meio do mato sozinha, mudar de nome e dps me matar"
+Logistic Regression,Portuguese,pt_001,FP,0,1,1,False,"quem chorou duas horas sem parar? sim eu, pq minha família vai me matar com cada sintoma diferente que parece :x"
+Logistic Regression,Portuguese,pt_013,FP,0,1,0,False,"acho que estou emagrecendo mais, eu vou morrer e a minha mãe vai me matar"
+Logistic Regression,Portuguese,pt_030,FP,0,1,0,False,"serio, eu já to de saco cheio do colégio e dessa merda toda. esse ano eu me formo e depois disso nunca mais piso em um colégio na vida, vou fugir até da faculdade. não quero me matar de estudar pra la na frente não conseguir ser ""alguem"" na vida."
+Logistic Regression,Portuguese,pt_047,FP,0,1,1,False,minha sandália torou no meio da rua meu deus eu me odeio vou me matar agora
+Logistic Regression,Portuguese,pt_071,FP,0,1,1,False,o centro da sua vida tem q ser vc não outra pessoa se um dia essa pessoa for embora e vc ficar na merda ao ponto de querer morrer .. a culpa vai ser somente sua por ter colocada ela no centro da sua vida.
+Logistic Regression,Portuguese,pt_090,FP,0,1,0,False,tanta coisa pra fazer hoje e a cólica vem pra me matar derrubar e humilhar
+Logistic Regression,Thai,th_004,FN,1,0,0,False,เพราะฉันคงหมดเวลา ถึงคราวต้องจากลา บนเส้นทางไกลแสนไกล ไม่อาจจะคืนย้อนมา
+Logistic Regression,Thai,th_007,FN,1,0,0,False,กี่ครั้งแล้วที่พยายามไม่หยิบคัตเตอร์และหยิบอย่างอื่นมากรีดแทน เพราะไม่อยากให้เป็นรอยแผลชัด
+Logistic Regression,Thai,th_010,FN,1,0,0,False,"คุณยมทูตคะ ""อะไร"" ""หนูมีความสุขจังเลยค่ะ"" ""ทั้งๆที่เธอตายเนี้ยนะ"" ""ค่ะ หนูรู้สึกเหมือนได้ออกมายังโลกที่มีความสุขกว่าโลกที่ หนูเคยอยู่ ได้ปลดปล่อยความรู้แย่ๆออกมา "" ""... (เธออาจเป็นวิญญาณตนแรกที่บ้าบอที่สุด)"""
+Logistic Regression,Thai,th_011,FN,1,0,0,False,มาร้องไห้ มากอดกูตอนกูจะตายมันก็ไม่ได้อะไรหรอก
+Logistic Regression,Thai,th_016,FN,1,0,0,False,มันไม่มีใครอยากมานั่งกรีดแขนตัวเองซ้ําๆเพื่อให้คนอื่นหันมามอบความรักให้หรอกนะที่ทําเพราะเรารู้ไงว่าไอ้แผลกายข้างนอกนี่มันไม่เคยเจ็บเท่าแผลในใจเลยสักครั้งคุณไม่ต้องสนใจหรอกเราก็ไม่ได้ต้องการไม่ต้องสงสาร และไม่ต้องซ้ําเติม ขอแค่นี้เอง
+Logistic Regression,Thai,th_020,FN,1,0,0,False,ถ้าเราบอกว่าเราอ่อนแอ เรายอมแพ้ มันจะสามารถจบทุกอย่างได้ไหมอะ เพราะถ้าได้เราจะทํา ในเมื่อสิ่งที่เป็นอยู่ตอนนี้เราไม่มีความสุขเลย
+Logistic Regression,Thai,th_023,FN,1,0,0,False,ความเศร้ากัดกินฉันในทุกวัน รอวันที่มันจะกัดกินลมหายใจสุดท้ายของฉันแค่นั้นเอง.
+Logistic Regression,Thai,th_024,FN,1,0,0,False,"‘ I’m not ok, I feel so scattered... ‘ ... ฉันไม่โอเคเลย, รู้สึกแหลกสลายเป็นเสี่ยงๆ"
+Logistic Regression,Thai,th_026,FN,1,0,0,False,ฉันดีใจที่ได้ออกไปพักผ่อน แต่ในขณะเดียวกันการพักผ่อนของฉันคือการนอนหลับไปแล้วไม่ต้องตื่นมาอีกเลย มากกว่า...
+Logistic Regression,Thai,th_039,FN,1,0,0,False,หนีออกจากบ้านไปให้รถชนตายก็น่าสนุกไม่น้อยนะ ว่ามั้ย:)
+Logistic Regression,Thai,th_040,FN,1,0,0,False,เค้าบอกว่าจงสร้างความสุขให้ตัวเราเอง555ด้วยการกรีดเเขนตัวเองนะหรอ? ใช่ฉันมีความสุขที่ได้ระบายมันออกมา..
+Logistic Regression,Thai,th_041,FN,1,0,0,False,ทุกคนพยายามช่วย ทุกคนตามหา ทุกคนบอกเข้าใจ แต่รู้มั้ยว่าเรามองไม่เห็นตรงนั้นเลย หลุมดํานี้มันมองไม่เห็นอะไร มันมืดมนไปหมด :)
+Logistic Regression,Thai,th_043,FN,1,0,0,False,ไม่รู้ทําไม.. ถึงรู้สึกได้ยินเสียงในหัวบอกให้ไปตายทุกที
+Logistic Regression,Thai,th_045,FN,1,0,0,False,อย่าเอาการเรียน ครอบครัว เพื่อน มากดดันเราได้ไหม แค่นี้ก็เหนื่อยจนอยากตายแล้วนะ
+Logistic Regression,Thai,th_050,FN,1,0,0,False,เลือดคมๆกับมีดแดงๆ???? พอจะทําให้ฉันรู้สึกดีขึ้นบ้างในตอนนี้
+Logistic Regression,Thai,th_051,FN,1,0,0,False,ภาระ=กู ส่วนเกิน=กู ขยะ=กู มึงจะเกิดมาทําไม...
+Logistic Regression,Thai,th_053,FN,1,0,0,False,มันคือการระบายสิ่งที่อยู่ในใจออกมา มันเป็นสิ่งที่ไม่มีใครเข้าใจได้ มันคือความเจ็บปวดภายในใจที่ได้ระบายออกมาในรูปแบบของการทําร้ายตัวเอง ถึงจะรู้ว่าไม่ควรทํา แต่ตอนทํามันกลับรู้สึกดีมากนะ
+Logistic Regression,Thai,th_054,FN,1,0,0,False,ขอโทษนะแต่หนูทําใจเชื่อใจพ่อแม่ไม่ได้จริงๆค่ะขอโทษที่เป็นเด็กเวรขอโทษที่เป็นภาระขอโทษนะ
+Logistic Regression,Thai,th_057,FN,1,0,0,False,ถ้าวันไหนเราไม่อยู่แล้ว ไม่ต้องเสียใจ ถือว่าทางนั้นเป็นทางที่เราคิดว่าทําแบบนี้มันดีที่สุดแล้ว
+Logistic Regression,Thai,th_067,FN,1,0,0,False,ห้องแคบๆ ห้องมืดๆ มีแค่ฉันและน้ําตา และความรู้สึกที่หนักอึ้งไปหมด ไม่มีคําพูด ไม่มีเสียงหัวเราะ ไม่มีรอยยิ้ม หลับลง และตื่นขึ้นมาอีกวัน และหลายครั้งที่ฉันไม่อยากตื่นพบวันใหม่ I always wanna die (sometime)
+Logistic Regression,Thai,th_083,FN,1,0,0,False,แม่งเอ้ยย ทําไมกูไม่ตายๆไปตั้งแต่เข้ารพ.รอบนั้นวะ กูฟื้นมาทําไมวะ ทําไมวะ แม่ง กูเกลียดความคาดหวัง
+Logistic Regression,Thai,th_087,FN,1,0,0,False,ผูกคอตายก็แล้ว กินยาเกินขนาดก็แล้ว เอายามากินกับเหล้าก็แล้ว ถ้าไม่มีใครเอาของมีคมในห้องไปซ่อน ป่านนี้คงได้ตายสมใจแล้วหล่ะ เป็นตัวน่ารังเกียจ สร้างปัญหา การถูกข่มขืนตอนเด็ก ทําให้เราป่วยจนถึงวันนี้ และมันหนักขึ้นเพราะแรงกดดันทางสังคม งาน เงิน ครอบครัว อยู่ไม่ไหวแล้ว
+Logistic Regression,Thai,th_089,FN,1,0,0,False,ก่อนนอนก็เศร้า ตื่นมาก็เศร้า อยู่ๆก็ร้องไห้ บางครั้งก็อยากตาย เป็นเหี้ยไรนักหนาก็ไม่รู้??
+Logistic Regression,Thai,th_098,FN,1,0,0,False,มันถึงจุดที่ทนไม่ไหว ก็ต้องการการปลดปล่อย คิดว่าวันหนึ่งเราจะไปโดยที่ไม่ต้องโพสต์ต้องลานั่นคือสุดแล้ว ไม่มีกําลังใจที่จะอยู่แล้ว
+Logistic Regression,Thai,th_018,FP,0,1,0,False,ใช่ค่ะวันๆนึงคิดจะตายไปแล้วเป็นพันรอบ ไล่อีกทีจะตายให้ดูแล้วนะ

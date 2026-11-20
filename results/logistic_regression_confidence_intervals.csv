@@ -1,0 +1,21 @@
+model,language,metric,lower,upper
+Logistic Regression,Arabic,accuracy,0.91,0.99
+Logistic Regression,Arabic,precision,0.875,1.0
+Logistic Regression,Arabic,recall,0.9,1.0
+Logistic Regression,Arabic,f1,0.9072164948453608,0.98989898989899
+Logistic Regression,Arabic,f1_macro,0.9095568284594513,0.9899989998999901
+Logistic Regression,Chinese,accuracy,0.78,0.91
+Logistic Regression,Chinese,precision,0.7230769230769231,0.8823529411764706
+Logistic Regression,Chinese,recall,0.86,1.0
+Logistic Regression,Chinese,f1,0.8070175438596491,0.9174311926605505
+Logistic Regression,Chinese,f1_macro,0.7767857142857143,0.9099189270343309
+Logistic Regression,Portuguese,accuracy,0.59,0.75
+Logistic Regression,Portuguese,precision,0.6551392572944297,0.9259259259259259
+Logistic Regression,Portuguese,recall,0.32,0.6
+Logistic Regression,Portuguese,f1,0.4473684210526316,0.6987951807228916
+Logistic Regression,Portuguese,f1_macro,0.5626625,0.742559983523839
+Logistic Regression,Thai,accuracy,0.6797500000000001,0.82
+Logistic Regression,Thai,precision,0.875,1.0
+Logistic Regression,Thai,recall,0.38,0.66
+Logistic Regression,Thai,f1,0.5428571428571428,0.7857142857142857
+Logistic Regression,Thai,f1_macro,0.6440513428972063,0.8152709359605912

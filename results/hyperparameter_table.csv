@@ -1,0 +1,17 @@
+language,model,search_space,n_configs,selected,val_macro_f1,test_macro_f1,macro_f1_ci_lower,macro_f1_ci_upper
+Arabic,KNN (CountVectorizer),"counts; k ∈ {1,3,5,7,9,11}; uniform; cosine",6,"counts, k=9, uniform",0.8306,0.8377,0.7614,0.8996
+Arabic,Multinomial Naive Bayes,"counts; alpha ∈ {0.01,0.1,0.5,1,2,5}",6,"counts, alpha=2",0.9407,0.8998,0.839,0.95
+Arabic,KNN (tuned),"counts|tfidf × weights ∈ {uniform,distance} × k ∈ {1,3,5,9,15,25,41}; cosine",28,"tfidf, k=25, distance",0.9135,0.8496,0.7786,0.91
+Arabic,Logistic Regression,"counts|tfidf × class_weight ∈ {none,balanced} × C ∈ {0.001,…,1000}",28,"tfidf, C=10, class_weight=none",0.9427,0.95,0.9096,0.99
+Chinese,KNN (CountVectorizer),"counts; k ∈ {1,3,5,7,9,11}; uniform; cosine",6,"counts, k=11, uniform",0.666,0.7883,0.7064,0.8599
+Chinese,Multinomial Naive Bayes,"counts; alpha ∈ {0.01,0.1,0.5,1,2,5}",6,"counts, alpha=5",0.6985,0.8586,0.7947,0.9197
+Chinese,KNN (tuned),"counts|tfidf × weights ∈ {uniform,distance} × k ∈ {1,3,5,9,15,25,41}; cosine",28,"tfidf, k=41, uniform",0.7108,0.8384,0.7672,0.9093
+Chinese,Logistic Regression,"counts|tfidf × class_weight ∈ {none,balanced} × C ∈ {0.001,…,1000}",28,"tfidf, C=1, class_weight=none",0.7135,0.8488,0.7768,0.9099
+Portuguese,KNN (CountVectorizer),"counts; k ∈ {1,3,5,7,9,11}; uniform; cosine",6,"counts, k=3, uniform",0.6163,0.5578,0.4623,0.6528
+Portuguese,Multinomial Naive Bayes,"counts; alpha ∈ {0.01,0.1,0.5,1,2,5}",6,"counts, alpha=0.5",0.7978,0.6044,0.5098,0.6962
+Portuguese,KNN (tuned),"counts|tfidf × weights ∈ {uniform,distance} × k ∈ {1,3,5,9,15,25,41}; cosine",28,"tfidf, k=5, uniform",0.6685,0.5175,0.4221,0.6094
+Portuguese,Logistic Regression,"counts|tfidf × class_weight ∈ {none,balanced} × C ∈ {0.001,…,1000}",28,"tfidf, C=10, class_weight=balanced",0.763,0.6548,0.5627,0.7426
+Thai,KNN (CountVectorizer),"counts; k ∈ {1,3,5,7,9,11}; uniform; cosine",6,"counts, k=9, uniform",0.6281,0.4544,0.3763,0.54
+Thai,Multinomial Naive Bayes,"counts; alpha ∈ {0.01,0.1,0.5,1,2,5}",6,"counts, alpha=0.1",0.7624,0.6179,0.5243,0.6997
+Thai,KNN (tuned),"counts|tfidf × weights ∈ {uniform,distance} × k ∈ {1,3,5,9,15,25,41}; cosine",28,"tfidf, k=9, uniform",0.6629,0.4544,0.3763,0.5242
+Thai,Logistic Regression,"counts|tfidf × class_weight ∈ {none,balanced} × C ∈ {0.001,…,1000}",28,"tfidf, C=10, class_weight=balanced",0.784,0.736,0.6441,0.8153
