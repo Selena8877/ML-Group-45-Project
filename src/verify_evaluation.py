@@ -17,12 +17,16 @@ PREDICTION_FILES = [
     "naive_benchmark_predictions.csv",
     "baseline_model_predictions.csv",
     "naive_bayes_predictions.csv",
+    "logistic_regression_predictions.csv",   
+    "knn_tuned_predictions.csv",             
 ]
 
 MODEL_NAMES = {
     "naive_benchmark_predictions.csv": "Naive (majority class)",
     "baseline_model_predictions.csv": "KNN (CountVectorizer)",
     "naive_bayes_predictions.csv": "Multinomial Naive Bayes",
+    "logistic_regression_predictions.csv": "Logistic Regression",   
+    "knn_tuned_predictions.csv": "KNN (tuned)",                     
 }
 
 
