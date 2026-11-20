@@ -1,20 +1,3 @@
-"""
-Shared tuning protocol for Logistic Regression and the re-tuned KNN
-(Milestone 5, Person 2).
-
-Both models go through exactly the same steps, so the comparison is fair:
-  - same splits (data_pipeline.load_splits), same seed (42)
-  - same character 2-3 gram features as Naive Bayes and the M4 KNN baseline,
-    used either as raw counts or as TF-IDF
-  - the vectorizer is fitted on the training split only
-  - every configuration is scored on the validation split with Macro-F1
-  - the best configuration (already fitted on train) is evaluated ONCE on test
-  - test scores come from evaluate.evaluate_model, with
-    evaluate.bootstrap_confidence_intervals (2000 stratified resamples, 95%)
-
-Ties on validation Macro-F1 keep the configuration that comes first in the grid.
-"""
-
 from itertools import product
 from pathlib import Path
 import sys
