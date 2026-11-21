@@ -64,7 +64,7 @@ def make_table(df, models):
 
 def make_figure(df, models):
     colors = ["#9e9e9e", "#7a9cc6", "#2b5c8a", "#c8611f", "#5a8f5a", "#8a5a9e"]
-    fig, ax = plt.subplots(figsize=(8, 4))
+    fig, ax = plt.subplots(figsize=(8, 4.6))
     width = 0.8 / len(models)
 
     for i, model in enumerate(models):
@@ -82,7 +82,7 @@ def make_figure(df, models):
     ax.set_ylabel("Test Macro-F1")
     ax.set_ylim(0, 1)
     ax.spines[["top", "right"]].set_visible(False)
-    ax.legend(frameon=False, fontsize=8, loc="upper right")
+    ax.legend(frameon=False, fontsize=8, loc="upper center", bbox_to_anchor=(0.5, -0.1), ncol=3)
     fig.tight_layout()
     fig.savefig(RESULTS / "main_results_figure.png", dpi=300)
 

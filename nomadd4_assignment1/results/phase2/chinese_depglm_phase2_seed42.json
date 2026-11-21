@@ -1,0 +1,1516 @@
+{
+  "metadata": {
+    "language": "chinese",
+    "experiment": "phase2",
+    "dataset": "DepGLM (DW/train.csv)",
+    "source_phase1": "chinese_4860samples_seed42.json",
+    "seed": 42,
+    "total_sampled": 250,
+    "depressed_count": 125,
+    "normal_count": 125,
+    "sampling_method": "balanced_random",
+    "sampling_note": "No new model predictions; 45/45/10 prediction-based stratification unavailable"
+  },
+  "samples": [
+    {
+      "index": 3914,
+      "post": "各位会心脏疼吗",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3824,
+      "post": "今天一口气花了好多钱，后悔了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 815,
+      "post": "只有快速从坏情绪中走出来啊，明天早上和中午醒来后都会难受好久直到晚上才好，一天什么也干不下去",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1820,
+      "post": "感冒本来就难受也更敏感…请了两天假 妈妈说：唉 能去就去吧 马上考试了 我就说：嗯 结果她说：你咋不考完试再感冒呢…… 她哪怕说句 你赶紧好然后去考试 我都不至于哭",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7188,
+      "post": "我发现一旦有什么人来刺激一下我 和我大声说话 我原来调整好的状态 全部回到过去",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5664,
+      "post": "我在想我真的那么差劲吗",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4920,
+      "post": "就让我自私一下吧，我想早点睡了 我不想再容忍任何人了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5275,
+      "post": "好累，被仓鼠咬了一口。为什么连养的仓鼠都讨厌我。",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1237,
+      "post": "抑郁症患者人们眼中是正常人吗？",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3552,
+      "post": "想死，难受，感觉没有希望，2号就要去医院复诊了，好希望医生能够救救我，好希望有人能够救救我",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6420,
+      "post": "好希望时间静止",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1701,
+      "post": "为什么唯独是抑郁症 所有人都不理解 她们觉得我根本不是 她们明明知道我睡不好 注意力不集中 身上没劲 为什么还是觉得我没事 如果所有人都这么觉得 如果真的没有办法了 给我一点时间 等我想清楚了 我就去死 我已经找不到任何可以活下去的理由了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 493,
+      "post": "友友们好，想问住过院的友友们一个问题。 在住院期间我可以拒绝做医生要求的某些治疗吗？ 因为我的医生跟我提出过好几次住院然后做mect，而且还说下次复诊我的状态还是现在这个样子的话就要我强制住院了_(:з」∠)_我非常不想做mect，如果我真的住院了我可以拒绝做这项治疗吗？ 谢谢大家",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6939,
+      "post": "特别特别难过 感觉自己特别不好 生病之后学业都荒废了 看不清未来的路呜呜呜",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2080,
+      "post": "如果一定会有人被爱，那一定一定不是我，下辈子吧下辈子我一定要幸福",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2561,
+      "post": "心里特别烦 坐立难安是为什么",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7230,
+      "post": "一睁开眼睛 脑子里全是期末考 我怕我考差 我很害怕 明明考得不好我父母也不会怎么样 可我真的好焦虑 受不了了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7540,
+      "post": "我真的特别特别想哭。我真的除了死就不能不去学校吗",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5244,
+      "post": "我有上学恐惧症",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3245,
+      "post": "我失眠了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1818,
+      "post": "特别害怕安静空旷的环境，小时候一个人待着就会恐慌大哭。没有人在就会把电视声音调大，开着灯睡觉。一直到现在也是，只要独自一人就会开始焦虑不安，视线模糊幻听之类的，产生zs的想法。并且有严重的分离焦虑，我应该怎么办",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4418,
+      "post": "经历了好多才懂得知足常乐，不再去奢求和渴望得不到的爱，亲情也好友情也罢，抓住自己拥有的的就好",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1171,
+      "post": "问大家一下，休学怎么休？我现在真的不得不休学了，或者退学也行，老师校长都知道我自杀未遂了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 7485,
+      "post": "我不知道自己属于哪里，好痛苦好痛苦，没人陪着我。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 3374,
+      "post": "我同学有抑郁情绪，本来她以为已经很久不再zc了，结果她好像是想让人知道或者是知道会让人看见，明里暗里的表现出来...我对这个行为没有什么意见，但是她今天发烧了，她可能是在跟自己赌气，但主要应该是不敢把胳膊露出来，我在想要不要告诉我们的老师她发烧了... 我是住校生，我们学校住校生很少，我平时跟她在一起比较多，也只比较和她聊的来，我能感觉到我不想失去这段友谊...但是她从开学初就一直慢慢开摆，如果聪明点还好，但是她甚至不抄作业，不想着作业怎么上交，我想她如此抑郁和学业有关系，她学业的摆烂也和抑郁情绪相辅相成...我或许应该离开这个漩涡，这个想法比较激烈的一次是和她有点口角，本来以为她情绪状态应该挺好，但是我和她两天里连接的口角里，都在平静下来的时候说了“抑郁”“下辈子”这样的词，我是昨天才知道她还在紫餐的...",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2607,
+      "post": "可是上天，拜托你睁开眼看看清楚，痛苦它不是我的爱人。你没必要让我们如影随形",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 1879,
+      "post": "吃阿普唑仑是不会感到饿么 吃草酸吃的食欲大增 但是一直睡不着觉 然后开吃阿普唑仑 发现这要是真有点厉害 我是第一次吃这个 嘴上说着睡不着闭眼睛一会就睡着了 但是我第二天第三天连着三天除了晚上都很困！而且就像我前期吃草酸一样感觉世界晕晕的转 头还很痛 吃止痛片业顶不住那种 这是怎么回事！ 然后没人喊我吃饭我也不想起床吃饭就想睡觉而且竟然不馋了感觉不到饿了…我真的很想一直吃下去但是据说会产生耐药性了 失眠真的太严重了 因为这个方面没有咨询医生 是我擅自加药的不太清楚 还有耳鸣到底怎么才能好！嗡嗡的一直很难受焦虑症抑郁症",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 687,
+      "post": "#边缘型人格障碍# 都是骗子…",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5298,
+      "post": "我的生活和我 就是这么枯燥无味的 你不关心也是正常的 但是朋友啊 你放心 我这种人活不长的",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2108,
+      "post": "想问一下各位对于年少时期的爱是什么想法就是我不知道我初中谈恋爱是正确的吗 我姑姑说我开心就好 ，但是我是在我明确我不会影响到我的学习的前提下",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2485,
+      "post": "今天晚上回家的时候很暴躁，和爸妈发了脾气，觉得爸妈不应该老是谈钱的事情给我压力，但是我爸妈确实花了很多钱在我身上，他们偶尔有一两句抱怨也很正常，我不应该和他们发脾气的后来我意识到了这个问题，和我姐姐说，我希望姐姐能够看到我的成长，希望他能够为我的成长感到欣慰，但是他关注的是我的钱到底花到了哪里？他觉得我不应该花钱去报名舞蹈课。觉得我一边亏欠一边索取，认为我是一个很虚伪的人。我说我因为自己成绩不够好，没能报答父母而感到内疚，他说我既然觉得成绩不好了为什么还要去跳舞来浪费时间。我现在才发现，我的最后一块遮羞布被我姐姐无情的扯下。从生病以来，我一直在为自己找理由，一直说自己生病了，所以不能做这个，不能做那个甚至爸妈和我说话都要小心翼翼的，生怕惹我不开心我只考虑了自己的感受，没有考虑他们的感受，而且总是拿生病当借口不去学校还拿生病当借口去学跳舞。最后我姐姐跟我说以后这种事情不要再和他说，影响他心情，我真的觉得自己是一个有罪的人，花了父母那么多钱，还让父母难过。自作聪明的想得到姐姐的夸奖反而被姐姐扯下了遮羞布。我该用什么样的方式赎罪，离开这个世界吗？",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 480,
+      "post": "我最近的记忆力减退的很严重 脱发很严重，白头发又长了很多 经常漫无目的的看手机 我以为我已经好的差不多 但是我最近很喜欢美妆 穿搭",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3991,
+      "post": "在一个病态的家庭里面，凭什么指望我是一个正常的人。",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1354,
+      "post": "忘记lz 从明天开始好好养病",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4067,
+      "post": "今天也辛苦你啦亲爱的！差不多就可以进被窝睡觉了哦，不管怎么样你又很努力的度过了一天，真棒真棒！ 好好睡一觉吧，睡不着也闭眼休息，每天要好好吃药好好吃饭哦，祝你好梦！ 不睡觉的我拿蛋黄派偷袭你",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4804,
+      "post": "祝我生日快乐 身体健康 天天开心！",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4172,
+      "post": "Mom said, don't cry.",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 281,
+      "post": "我累了 我好想离开",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2738,
+      "post": "2024 事事顺心",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2453,
+      "post": "是不是死了就不用担心那么多了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4168,
+      "post": "你们吃药会不会便秘啊[淚][淚]之前还好 最近吃草酸一直便秘 之前天天一次 现在要好几天 好痛苦 我还感觉我胖了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 3406,
+      "post": "我不知道自己到底在纠结什么，但就是一直纠结； 我也说不出自己到底在痛苦什么，但就是一直痛苦。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 735,
+      "post": "我差点以为自己被人爱了 以为自己再也不是一个人了 原来还是我的自作多情 还好陷得不深 不然又要经历那种痛不欲生的日子了 我就说我这种人不配被别人爱的",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 1109,
+      "post": "所以我应该闭嘴的 我应该什么都不要说 悄悄的死掉就好了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6778,
+      "post": "小时候差点被当成葡萄胎打掉，为什么不把我打掉呢，就差一天，为什么要检查两次",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 7640,
+      "post": "不想治了，感觉没有人喜欢我，从来都没有人爱过我，她们都爱自己，所说的爱我都是假的，根本没有人会喜欢我，我本来就是一个不讨喜的人，从各方面都是，怎么可能会有人喜欢我呢",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6423,
+      "post": "我的脑子🧠 ：好想死 ：别死 ：生活好累 好烦 一切都不如意 ：没有谁的生活很如意 各有各的辛苦和快乐 过自己的生活 好好努力 ：哦 好想死 ：别死 ：好吧 有点累 ：转移注意力 好好休息 ：哦… ：想回家 快到家了吧 好远 好累 ：坚持坚持 ：好想死 ：别死",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 7397,
+      "post": "e老子真的要被气死了。你们全该死 你们都是贱人。你们潜伏在我旁边就是想杀了我e 啊啊啊啊你们好恶心的",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4409,
+      "post": "我的脑子大概是真的不太好用了 每天累的晕头转向 前两天因为论文没改好被老师骂了 哭了好久 真的好累",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2582,
+      "post": "想问问大家停了喹硫平之后多久才能瘦下来，吃药好几年了喹硫平是从刚开始一直没换的，一点也戒不掉，只要不吃就睡不着，吃了就能睡着，最近看了眼体重真的太崩溃了想下定决心跟医生提议换药，一开始吃喹硫平也是我跟医生提出来的，因为我说我不吃就睡不着，我现在想努力试试戒掉了……",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5625,
+      "post": "感觉自己越来越暴饮暴食，吃东西吃到撑吃到吐。 特别特别想妈妈，一年了，妈妈走了一年一个多月了，我的躯干化很严重，经常无法集中注意力，食欲一阵好，暴吃到吐，一会儿又能一整天不吃，失去了很多兴趣，本来也没有什么兴趣，总是想到事情不好的一面，对婚姻也很悲观。大后天要过生日了，但是也没有感觉，越来越觉得生日也很普通，又是平淡的一天。 很想去死，但是没有精力，每天好想真的像傻子一样浑浑噩噩度过。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4216,
+      "post": "2023的最后一天：头痛。抑郁症",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 576,
+      "post": "看不到人生的尽头没有希望我讨厌所有事和人，为什么没人理解",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5792,
+      "post": "医生让我早上吃丙戊酸钠一片＋文拉法辛两粒，我该吃吗？虽然医生的话是对的，无理由怀疑，但我怕月经不调怕长胖啊，丙戊酸钠不是是女生不要吃吗？ 起因是，我又开始失眠了，晚上吃了奥沙西泮＋右佐匹克隆也不容易睡好不容易睡着就只能睡两三个小时然后就睁眼到天明了。白天其实特别累",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 1002,
+      "post": "没有精神支柱，想看看宝宝们的宠物",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5868,
+      "post": "躺了好久还是睡不着，拿手机不拿手机都睡不着",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3427,
+      "post": "如果你当初觉得我很烦 你为什么当初不直接把我放弃呢 心理问题是你造成的 你现在却怪我 我讨厌你",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4137,
+      "post": "我一直装自己好了今天问我为什么抑郁我只是沉默笑笑，一直说我叛逆期过了我也是笑笑",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6108,
+      "post": "我好想去一个不会让我悲伤的地方待着",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 7962,
+      "post": "我是什么很坏的人吗 同学问我，我有抑郁症她们就该让着我吗 老师说我情绪不稳定不让我待在学校 早知道就不告诉他们了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6797,
+      "post": "抽烟会让我的手抖加重，但是会减轻自残的想法",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 1232,
+      "post": "其实早就知道我家狗不在了，但是没有听到家里人说不敢相信，一直都想问，没敢问我好想他，但是我一直特别严重，我不敢看他我这么失败的一个人好难受，我以为他还能陪我很多年的，才十年",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1150,
+      "post": "我懂得一半靠药物一半靠自己的道理，可我真的有点累，不想再靠自己了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 662,
+      "post": "生病快一年了，几个两个月没效果就换一次抗抑郁药，现在已经吃了8种抗抑郁药，4种抗焦虑，7种安眠，2种精神分裂，我想问问这是药物治疗效果不好吗？",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2557,
+      "post": "被主刀医生问：“你怎么不上学啊，学习那么紧张？”",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2674,
+      "post": "艹，昨天刚发过誓不再嘴贱，今天就忘了？？？打死我自己得了……",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2221,
+      "post": "哈哈哈想死 可偏偏是抑郁症 只有我自己才能理解我自己",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 7221,
+      "post": "感觉自己的情绪好像又有点调节不了了实在是不想交流 说话好累好累，活着也好累。不想吃药不想吃药不想吃药不想一辈子都吃药，不想再当药罐子了，但是我发现我好了，但只是暂时的好了我还是需要用药。。嗯，可是不想浪费钱，不想，但是情绪又不好。心累。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6251,
+      "post": "这个表情包太适合我的精神状态了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5629,
+      "post": "关得死死的，别人进不来，自己也出不去",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 875,
+      "post": "元旦，除夕 我从不觉得开心，我希望在漫天烟火的欢声笑语中，我的生命从此停住",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6156,
+      "post": "外面下雪了 除了我每个人都好开心，觉得自己格格不入。。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2634,
+      "post": "我努力的活，努力的自我救赎，但是生活并没有给我残喘的空间",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5638,
+      "post": "与其让你在这个破烂一样的生活里打起精神，不如希望你能睡个好觉，晚安",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1027,
+      "post": "很想问问大家，前几日在学校被造谣跳楼（自身初诊是重抑+重焦），被学校老师劈头盖脸痛骂后被要求休学，但医生可开建议上学的单子，学校有资格逼我休学嘛？",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4486,
+      "post": "讨厌活着（每天发一遍希望早点死）",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 7459,
+      "post": "好难受 明明上一秒还好好的 下一秒就控制不住难过流泪 还是在上班的时候 又没办法说自己怎么了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4368,
+      "post": "如果手机被收了我就真的活不下去了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1414,
+      "post": "有拖延症怎么办啊，感觉我大部分不好的情绪都来自拖延，想做一件事却一直拖着",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 6187,
+      "post": "想找个聊天的姐妹，可以拿我当树洞，当发泄包，难过的时候找我聊天，狂躁的时候找我说话，啥都可以，被蚂蚁咬了一口来找我骂它一顿也ok互相容忍喜怒无常与对方的小缺点和特别。我初三生，也可以一起学习",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4092,
+      "post": "其实不管是有钱人还是没钱人，都是这个世界的npc，主角只有自己，过好自己的人生就好。 以前我还在想我命由我不由天，都是笑话，很多东西都不是自己能决定的，可能明天就亖了，现在能做的只有尽人事听天命。",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1267,
+      "post": "我真的无语，原本的号超话都六级了结果丢了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3119,
+      "post": "每天不定时会突然心跳加快，脖子会变得僵硬，左半边脑袋疼，反胃这是抑郁症的正常反应吗",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 1391,
+      "post": "好想死又不想主动死，好恶心的家庭，好恶心的工作，对一切都没有希望，希望能突然死了，但是又不想死的太难看，要是可以没有任何痛苦我突然变成一盒骨灰又能留下很多钱给我妈就好了。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 1024,
+      "post": "都是在心情愉悦时刻记录的 希望我们都好好的",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 6674,
+      "post": "上次和妈妈视频诉苦，不耐烦和不解的表情真的使我心脏绞痛，但我怎么怪她 你要怎样让一个拼搏半辈子，只为家人能过得好的女人去相信她的女儿不快乐，怎么能自私的让她去相信她的女儿早已死了千百回了 就像我身边的“另一个我”一样，她的妈妈患癌，她得多坚强才能说出“我不能没有妈妈，但我妹妹不能没有我，如果我狠下心跟我妈妈走了，我妹妹怎么办，她多开朗，变成我这样怎么办？” 她刚刚经历爱情的背叛，又马上要接受妈妈病重的事实。 老天为什么不能看看她，她自己还在努力的抗抑，为什么不能给她一点时间？ 但我又想，你看啊，这世界本来就是《苦难集》，他从来不会放过任何一个人，可是为什么呢？苦难总是一起来，把挣扎着刚站起来的人砸向更深的地底… 人就是这样，缺失爱，寻求爱，失去爱",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 1101,
+      "post": "熬完这周考试周 快了再坚持一下",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 450,
+      "post": "除了我自己任何人都救不了我，我知道我知道—————",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 558,
+      "post": "死了算了吧 活着真的好累",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 443,
+      "post": "太失败了 让自己堕落到这个地步",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2156,
+      "post": "24年第一次又败给了躯体，恶心感又来了。吃的东西又全都吐出来了，吃药真的有用吗 放过我吧我明明很开心了为什么躯体还在不断的折磨我 重庆·长旭大牛串串(弹子石店)",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 648,
+      "post": "吃舍曲林已经快两个月了每天睡觉都会做梦有人会这样吗",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 7938,
+      "post": "重度抑郁状态，是吃药好，还是心理治疗好？",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 713,
+      "post": "还有人没睡吗？本来明天有早八课应该早点睡的，现在……好吧我睡不着",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2518,
+      "post": "我真的要疯了，别问了别问了不要问我了，不要问我了，不要问了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1064,
+      "post": "之前吃了两个月的国产舍曲林唯他停，还是强迫控制不住想，只是减轻焦虑痛苦情绪，现在拿了进口的左洛复一盒72快多，我是强迫症吃两片管用吗，四片吃不起，国产的感觉效果不好，有没有吃进口的左洛复的，进口的和国产的效果差距有多大！",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5649,
+      "post": "又到了想死了算了的时候，这世界真没意思",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5924,
+      "post": "抗抑药吃的我特别难受，躯体化加上药物副作用，我真的崩溃了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 3187,
+      "post": "明天又去复查",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7978,
+      "post": "超话是我唯一能够吐露心声的地方 抑郁症是最不能被人理解的疾病 周围的人只会说你想多了 矫情 脆弱 闲出来的 病的时间久了 发作次数多了就连身边最亲的人也会对你的痛苦视而不见 身体不受控制的手抖 心慌 失眠 心里难受时只能偷偷的哭 大脑里那种乱七八糟的想法折磨得自己生不如死 却不能告诉任何人 只能把自己伪装起来 表现出我没事 我很好的状态 不想给人添麻烦和负担 每当独自一个人的时候 只能通过自残来保持清醒真的好想去死 计划着各种可以实施的方法 每一次都会被我的狗狗拉回来 看着它天真可爱 安抚我的样子让我不忍心离开它 抑郁症这种时好时坏的状态真的太折磨人了 除了患者没有人能够理解和体会这种痛苦",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2590,
+      "post": "家人们谁懂呀，现在满脑子都是我弟说的“你当初怎么不从楼上跳下去，死了算了”",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 3969,
+      "post": "话说我有个疑问？就是因为换了一个城市生活不能去以前的医院拿药。重新在当地城市就诊的话，你们有没有担心过如果找的医生换药了的话，新开的药会不会没以前有效，然后影响状态？焦虑症强迫症",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5012,
+      "post": "随便吧，我又不会结婚，管好自己就行了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2147,
+      "post": "没得过的永远不懂 我从不相信感同身受 大多人的无所谓无知令我绝望 我想我好了我一定要去拯救 确实有这种疾病 不能有偏见和歧视",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2008,
+      "post": "每次跟朋友提起过去的经历，她们总觉得我在夸大其词，然而事实是，真正让我陷入绝望一遍遍出现在我噩梦中的那些事我甚至都没敢说出口",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 7827,
+      "post": "早晨起晚了没有吃饭，头晕，以为是因为拉肚子，直到腿都软了……才发现是低血糖",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 866,
+      "post": "快跨年了，看着别人都去电影院看电影，自己在家无所事事...",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1230,
+      "post": "对抑郁的我说“那么焦虑干嘛，开心点”就像和哮喘病患者说“周围都是空气，你快呼吸啊”一样。我真的受不了了，周边的人都太烦了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5110,
+      "post": "怎么有种不好不安的预感",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7039,
+      "post": "好久都没看微博了..... 是我自己摔的，我当时躺在床上听她说，打电话，我感觉我快崩溃了，脑袋一抽抽我就全都给摔了，桌子上东西我都划下去了，边喊边撕东西，卷子被我撕了这种剧情已经在我脑中上演过千遍万遍，今天我也不知道是什么驱使我都给摔了，可能是从她把我桌上的一个袋子摔在地下吧，我现在不敢捡起来，我害怕，我害怕他们不能原谅我的冲动，不敢动他们抑郁症",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4559,
+      "post": "昨天在群里聊天有人说看着我不像抑郁的样子 我感觉我在网上很正常的样子现实又不一样了 她们问我你很活泼话多怎么会抑郁呢 我一直在想这个问题 我也想不明白",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6448,
+      "post": "快点好哦",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4924,
+      "post": "如果我死了会有人在意吗",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 7190,
+      "post": "我感觉我抑郁期最大的执念就是我不甘心，为什么我要过这么无聊的生活为什么我的身体总是绵软无力，好多事我真的做不到了，等我gap很长一段时间后谁来接受我呢，想来想去没有答案那只有哭鼻子了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6828,
+      "post": "如果不上高中 还有合适的工作吗 感觉真的完不成学业了 一想到学校我都会躯体化大爆发",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5469,
+      "post": "待过地狱的人，只想努力活在人间。抑郁症",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4173,
+      "post": "医院开药是怎样啊？之前就说要不合适要给我换药，结果开的还是一样的药。吃了它的药晚上还是睡不着一点。。。我这周期末周考试了请问我哪里来的精力",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7913,
+      "post": "忽然就觉得我现在乃至以后都是现在这个状态，好也好不了哪里去坏也坏不到哪里去，我从小就没有体会过正常大脑的那种快乐、无拘无束，我是一个悲观主义者，这个精神病会伴随我的一生，无法解开抑郁症这几年经历过的一些事，历历在目",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 430,
+      "post": "唉😮💨真的好累",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 256,
+      "post": "父母一直让我和医生沟通断药断药断药 可是我根本断不了草酸艾司，我甚至还想多吃几颗。今天晚上又发作了，吃半颗右佐匹克隆睡一觉应该会好点吧",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4848,
+      "post": "我妈要是以前能同时把我也顺走就好了。 。不能想象是我妈苦一点还是我",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2656,
+      "post": "请问大家成都有没有比较好的咨询医生推荐",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7982,
+      "post": "好崩溃，看到了一条帖子，我现在死亡恐惧又发作了，好难受，好害怕",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 616,
+      "post": "昨天喝了三瓶干啤，以后是不是想划自己的时候就换成喝酒，反正都是对自己不好的",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 1001,
+      "post": "那个女生转了最后的一万四给她爸爸然后就跳河自杀了，这大概是几年后的我，我会尽可能的都省出来给父母，也会在离开前告诉父母一声，起码别让他们联系不到报失踪吧。彬呀，你也是给父母留了一笔钱然后离开的吧，我很想你，你现在是不是很快乐了，我昨晚梦到被人杀了，有点怕但有种解放的感觉。彬呀，你今晚进入我的梦里来吧，我真的很想你。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 3156,
+      "post": "挺难受的",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7087,
+      "post": "我算轻度抑郁吧。今年的跨年一点也不开心，跨年演唱会也没兴趣看，和很多因素有关，首先是年纪大了点要28了，很多事物失去了新鲜感，甚至对异性都没有多大兴趣了，第二因为新冠让身体坏了，经常感冒，还有后遗症。第三高考后去了自己讨厌的艺术大学，什么人都有，抽烟的女生，去夜店的男生，女生，出卖自己的女生。我还因为性格还有成绩，被同学排挤歧视。学校差，能力差现在工作也找不到",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2412,
+      "post": "抑郁症有谁在天津市安定医院住过吗怎么样，明天就要去了被胁迫，管理怎么样，求回复很急谢谢",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2099,
+      "post": "昨晚，我突然浑身抽搐，呼吸不上来，干呕不止，胸口闷痛，那一刻我真的以为自己快死了。。。。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4480,
+      "post": "你们以为我不想回学校学习吗。别这样说你觉得我说的对，没有感同身受，就别说，道理我都知道",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1305,
+      "post": "其实，如果不是因为有孩子在家里，我真的一点也不想打电话或是发视频到家里的任何人那里，本来身体不舒服，想寻求一点安慰和关心的，换来的永远就只有一句话“你一天工作好忙哦，忙的休假的时间都没有，找了好多钱哦，结果一分钱看不见”…瞬间可以直接把你想说出口的话，生生憋回去，本来还是硬撑着好状态，想和孩子聊聊天，有时候真的不想把孩子交给父母带，现在孩子四岁多了，总是在孩子面前提钱，提金钱观，还是错误的金钱观，把对我的不满，全都在孩子面前对我说，我真的不知道孩子以后心态会是个怎样的心态，算了吧，反正也只是有些不适，不至于死掉，就算会死掉，我也不期望得到你们任何的关心，不想有心，有心会累，会伤心，会心痛……反正无意义，何必又去满怀期待，那微弱的火苗，又被生生掐灭……",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 51,
+      "post": "初中就抑郁休学了我的人生是不是完勾八蛋了，初一休到初二现在下个学期就是地生会考……",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 3550,
+      "post": "本以为在灰烬中看到了曙光，却没想到将我推向了更深的深渊。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5473,
+      "post": "梦见了小时候的亲人抓不住他们了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7093,
+      "post": "有没有追星的姐妹 谁懂当时给我吓死了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 164,
+      "post": "当你的至亲都讽刺你 说你的抑郁症都是懒惰得的 各种各样话语打击你 甚至关键时候特别现实 残忍 你会怎么样？ 其实原生家庭太缺温暖 我们反而更应该要肆无忌惮做自己啊",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5944,
+      "post": "我的内心好像只有无尽的痛苦和疲惫，再加一个绝望，让我s掉吧‧⁺◟( ᵒ̴̶̥́ ·̫ ᵒ̴̶̣̥̀ )",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 1368,
+      "post": "抑郁症，在我生活里，这个词微不足道，又有什么作用，只不过在一直折磨我的躯体表现罢了，我不还在负重前行，摆在我眼前的选择，口是心非还是选了想上，我觉得以这种名义上真的有点丢人，我妈太在乎面子了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5816,
+      "post": "好像突然爱上身边人和事了，开始认真生活了，但是晚上突然又会愣住，会问自己在干什么，明明我想zs的，一直怕疼劝自己再等等，然后等着等着都快忘了zs这回事了，很迷茫现在，明明好像放弃了怎么突然又生活起来了，是因为爸妈的转变和朋友的陪伴吗，但我想到以前的日子莫名又会心痛……",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2231,
+      "post": "找不到活着的意义，不明白为什么要被生下来，如果可以，下一世我想把生而为人的机会让给别人吧，给我太浪费了。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6487,
+      "post": "吃上药了捏，大概很快就会睡着，但是很怕睡上十五六个小时，我爸还在家，他会骂死我的。两年六百多天，通宵了大概五百多天吧，怎么改作息呢，其实白天也没有像别人说的那样以抑郁为借口睡一整天，好多时候就睡三四个小时，我是真的生病了呀。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5484,
+      "post": "uu们抑郁的时候会不想洗澡吗",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 7755,
+      "post": "我爸真的是不顾我死活的想要我找对象无论我说我这个病到底有多难搞我真的控制不住我的情绪他们不理解也不想去了解也就算了到最后还是一句你还是要谈个对象造的什么孽啊",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6169,
+      "post": "最开始的时候我逢人便讲我的遭遇我的生活我的不幸，渐渐的我发现并没有人在乎我到底经历了什么？我期待着他们可以给到我安慰，帮助我分担压力。哈哈以前的我太天真，根本没有人会在乎我。他们总是问我怎么了，我以为他们在关心我，了解我，其实呢，他们我当成笑话，把我的经历当成睡前故事，我激动的讲述着，讲到最后都会哭，可是听到的确是一句没事没事都过去了。我知道我没有办法让他们真心给出有效安慰，所以我觉得从前的我天真至极。现在我也不会讲述我的故事了，我也变得不再是那个会主动在别人面前表演节目的小女孩了，我不是妈妈口中那个开朗大方大大咧咧的小女孩，我变得不愿意讲话不愿意交流，他们问我怎么了我只会说没事，我学会了骗人，我学会了搪塞，我也不再会认真回答。或许这也是我们不爱交流的原因了，可是这不怪我也不怪他们，到底是谁把我搞成现在这样 （现在我连最基本的表达都不能完整了，思绪是混乱的语言是重复的，可怕）",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2064,
+      "post": "考研倒计时2天 每天困的要死，最后的几天也看不太进去了。不喜欢全网贩卖的焦虑，但也真心希望收到一些大家的祝福可以吗",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 933,
+      "post": "睡觉 昨天喝了奶茶今天有点晚睡",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5409,
+      "post": "想到一句话 我站在我的疾病里 我看出去的苍白与荒芜 我只想告诉他们有这种愿望是多么的可耻 我向往的健康在他们看来一文不值 我彷徨无措 我好像更健康...",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 290,
+      "post": "有没有人吃丙戊酸镁和喹硫平，面无表情面瘫的，感觉跟别人说话的时候好尴尬，别人笑嘻嘻地看着你，你一张面瘫脸",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 7644,
+      "post": "我不知道作为亲生父母他们为什么一定要把我逼到如此山穷水尽的地步。 撑过了非独立期，工作了，经济独立了，发病了。想去医院开病假单，又要考虑这会不会影响之后的工作或入职。 是我输了。谁的身体和精神先扛不住，谁输。 抵押前途。 那又怎么样呢大不了就去死。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5389,
+      "post": "因幸福而哭的感觉是怎样的呀，从来没感受过，我会等到那一天吗，然后爱哭真的有错吗，20几岁就不能哭了吗，可我就是很容易掉眼泪呀，明明他们才是一次次害我难过流泪的人，可他们从来没看到我眼中的诉求，还说我动不动就落泪很丢人。",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3640,
+      "post": "一定要非活下去不可吗？",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6000,
+      "post": "烟花的声音好吵",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7543,
+      "post": "这两天手又开始抖 -葡萄芋圆-的微博视频",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5127,
+      "post": "2021年的暑假，彼时刚刚初中毕业的我无论如何也想不到高中三年居然会这么难捱。目标大学一降再降，从坚定的“考上211”，到确诊抑郁后的“一本就行”，再到一个月后的春考。 不出意外的话，我会被一所二本录取。 今年春天，我迎来人生的一场巨变。很久以前就听说过“宛平南路600号”的传说，但当我真正走进去时，还是有一种虚幻感。确诊中度抑郁，家里人包括我自己都很意外，接下来就是不停的吃药和间歇性发作。手腕上也留下了两道疤，不知道这辈子有没有复原的机会。 接下来的大半年里，我仿佛分裂出了两个自己。其中一个，在不断降低对自己的要求中逐渐堕落，而另一个只能悲哀而清醒地看着这一切的发生，束手无策。 但我忘不了曾经对未来满怀期待的自己，忘不了凌晨起床写作业背书的忍耐，忘不了背着大包小包爬楼梯的坚持，更忘不了困到睁不开眼时还要在笔记本上写下的success。是什么困住了我?当我在作文里痛批功利社会的时候，是否有一瞬预料到自己也会被卷入时代浪潮，苦苦挣扎而不得出? 马上就要到冬至了，绿叶已经落尽。我也想要像它们一样坠落，在粉身碎骨中迎来自己的18岁。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 1383,
+      "post": "我真的不知道我怎么了 梦里会突然难过 醒来了一直落泪 白天也会 突然的情绪崩溃 蹲在垃圾桶旁边背着人默默的哭 我不知道会持续多久 要不还是遵医嘱 去开药吧",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5811,
+      "post": "晚上就算再困都睡不着 早上很累很困有时候还会嗜睡 奔溃了 这算失眠吗 什么情况啊",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 578,
+      "post": "第二天嘴部抽搐，是吃四分之一喹硫平的原因么",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2311,
+      "post": "我也不知道自己做错了什么，总是突然被讨厌，突然被冷落。 可能我什么都做错了，也可能是我不够好吧。那抱歉了～没有成为你心里期待的那种朋友。 我自己问了自己一句 “笨蛋，疼不疼” …… “其实这一路走来，我自己也心疼自己”",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 1139,
+      "post": "今天的工作效率特别高，本来很开心 可是回到家，躺在床上，我又变回了原来那个自己，原来什么都没变……",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3647,
+      "post": "怎么样做才能让自己男朋友主动意识到快失去自己女朋友？",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7295,
+      "post": "送宝宝们圣诞树🎄也祝我又熬过了一年么么么么",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4670,
+      "post": "看到大学生医保报销上好像有个慢性病，如果看病走医保，学校会发现吗， 汇入资料，检查报告单会不会看到哇 不然只能自费了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 589,
+      "post": "怎么样才能救我啊！又开始焦虑了真的好难受",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7803,
+      "post": "托鲁地文拉法辛80mg 除厌食外无副作用 也没作用 每天绝望低迷无兴趣疲惫无所事事厌恶白天度秒如年像回到得病初期",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6660,
+      "post": "我的碎碎念： 晚安 maybe everything has a good result.",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5289,
+      "post": "很多人说抑郁跟下半身没有关系，其实我蛮想反驳。你没有体会过抑郁怎么知道？就像大众对抑郁的误解刻板印象，抑郁症该是怎样怎样，你们真的知道吗？知道抑郁千人千面么？如果你 或是口中的当事人，经历过临界点被破带来的认知刷新，那也无可厚非，没有错。 你会请求心脏病患者“你不要再心绞痛了”吗？你会请求腿伤患者“你不要一瘸一拐走路”吗？ 你们敢吗？ 人人都知道疾病引发的症状是患者主观无法控制的，但是抑郁症或暴食症并不是。 你们之所以敢这么说，不过因为抑郁症在国内终究是小众群体，从一开始就站在了道德高点，舆论的高点。 无论我们怎么回复，你们轻飘飘的一句抑郁症就是这样无可理喻，把我们堵死。 许多没有经历没有体会抑郁的人，总劝告你不要想太多，不要敏感，他比你更想这样做，他比你更想让自己好起来，但他做不到，他无法控制。 疾病引发的症状都是无法凭借自主意识来控制的。 没有什么“不懂抑郁”“在外面的人”只是人家压根不想了解。如果他真的有心，自然懂。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 7428,
+      "post": "当当当，我的夜晚小零食",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4632,
+      "post": "医生 我没想活下来的",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2516,
+      "post": "之前一直吃草酸只是副作用大 🧑⚕️就让换了舍/曲/林 但是现在吃这个一点作用都没有 情绪反噬特别大 我像是变成了压在五指山下的孙悟空 这种情况怎么办",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2917,
+      "post": "我总感觉我快死了 可是我不想死 我怕疼 我怕死不掉会迁就父母一辈子 怎么才能天天开心呢 重庆·永川区精神卫生中心",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 563,
+      "post": "只要有我在，你们就不会孤独",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5681,
+      "post": "前些天吞药了，据说吐的头发上都是，不敢跳楼。生下来真的只能活下去。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6861,
+      "post": "支原体感染请了两个星期，班主任说请这么久的假，他都没说话反正就是挺讨厌的，又不是我想生病",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4371,
+      "post": "又是新的一天，恭喜各位还在此游戏中存活",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 19,
+      "post": "我*******我甲流这么多天没吃过一顿正经饭 我今天终于有点胃口了 特别特别想吃一口牛肉面 但是吧就是身体各个部位就不太赞同主要不赞同下楼这件事 然后叮嘱我爸一定要牛肉面干拌加个蛋 他好好好的出去了 回来的时候…土豆丝拌面？？？？？ 牛肉面就在楼底下…这个破面你还要过马路…又不让点外卖，存心隔应我是吧 还能指望你干啥（我的妈这句他从小说我今天终于说回去了） 太无语了 吃个屁喝口水接着睡",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5916,
+      "post": "重度抑郁+重度焦虑+轻度躁郁 双向情感障碍，拜托了，放过我吧，我真的很努力的在活着了。。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 3680,
+      "post": "外婆 你可不可以告诉我 是我想要的太多 还是老天给我的太少",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5644,
+      "post": "冬天与冰花❄️",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2714,
+      "post": "我还是去死吧",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 850,
+      "post": "宝宝 首先祝你生日快乐鸭ヾ(≧∪≦*)ノ〃 然后也要祝宝宝新年快乐！又是新的一年啦，宝宝很厉害哦，又坚持下来啦！我相信美好的事物一定会在新的一岁如约而至的！ 新的一年，祝宝宝身体健康无病痛，所愿所念皆成真！♡♥(。´▽`。)♥♡@芝士蟹肉饭_ 抑郁症",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1302,
+      "post": "想来帮姐妹问问，坐标上海（优先江浙沪）有没有什么医院推荐，想去住院，因为我只了解上精卫，但是姐妹不太想住上精卫所以来问问。具体想知道住院能不能带手机、需要家长陪护吗（已成年大学生）、住院大致花费（只需要告诉大致住多少天花了多少这种），如果可以的话再想问问关于伙食、作息、治疗方式（除了吃药以外还做什么，另外有没有强制经颅磁或者MECT这种）。谢谢大家！鞠躬！",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2057,
+      "post": "我想问一下 因为自费开药太贵了所以我一直都是去医院看了一两次以后就拜托我妈妈帮我去开药（她开药比较便宜）这就导致了我没有去看医生一直在吃同一个药 也没有调药 这样下去会不会对身体造成伤害还没什么用 有必要回去系统治疗吗 孩子真的很想赶紧好起来断药",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3653,
+      "post": "谁懂我对劳拉的又爱又恨",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 572,
+      "post": "活着好难…死也好难…",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5422,
+      "post": "疼，还没死",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7792,
+      "post": "昨天做了一个梦，梦里有好多爱我的人，梦到大家都会理解我爱护我，但一睁眼，还是回到这个糟糕的世界，我不愿接受这个事实，闭上眼睛打算再次回到那个让我开心的梦境里，可是就是再也睡不着了，可能只能在仅有的几次梦境里会有人爱我吧，也可能我天生不值得被爱",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2036,
+      "post": "第66天 活着 (010) 8295 1332 自杀干预的电话 24小时在线",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 52,
+      "post": "我快疯了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 6332,
+      "post": "怎么说呢这个梦……就是梦里用尽生命的最后力气在喊“把你们全都鲨了”，声嘶力竭，喊到吐，呕吐物差点堵死我的程度🙏",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 8044,
+      "post": "我不想每天哭到天亮了 我只想死",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6129,
+      "post": "人为什么会这么痛苦，生活为什么会这么黯淡无光",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5989,
+      "post": "求助一下大家我做了三次MECT有的事情还是忘不掉 我真的很崩溃😀只要聊到父母离婚上我情绪就像被点燃的火箭一样",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 233,
+      "post": "我的妈妈，好爱你，但是我真的撑不下去。怎么办，你只有我了。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 692,
+      "post": "今年你得到了什么呢？有没有好好想想，所谓自己想要的沉淀做到了吗",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 647,
+      "post": "睡不着 好烦呐",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7259,
+      "post": "我的胆汁：哈咯啊又见面了我：滚啊这辈子都不想再见到你 真是一次酣畅淋漓的呕吐啊",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7958,
+      "post": "不想回到痛苦的过去 也不想现在这样活着",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 3259,
+      "post": "大晚上焦虑犯了 开始学习 我就是傻b 甚至想shang hai自己 真的好难受",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 3137,
+      "post": "本条是树洞帖 各位新关注暂时还没有达到发帖等级的可以在这条帖子下面交流，同样需要遵守超话发帖规则。",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 47,
+      "post": "今天真的好生气 本来就不开心 看到自己喜欢的选手住地下室 真的会不舒服",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3693,
+      "post": "哎 活着真的很难。",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 6335,
+      "post": "心脏好难受 把小白抱进来陪我 他扑我 是谁因为七点多要回学校害怕的睡不着",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5246,
+      "post": "感谢许老师和刘老师！感谢小伙伴们！能扛到现在实在不易，也该珍惜一路坚韧不拔的自己了吧，骚年？！",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1243,
+      "post": "一想到自己是垃圾是废物，就是最差最烂的那个，且死不足惜的时候…我反而会更加好受一点",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4334,
+      "post": "今晚一出卧室，闻到了来自客厅的清甜香味沁入心脾，才发现我的昙花今天开了12朵！亲手把植物养开花真的是一件超级治愈的事情💚",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5617,
+      "post": "有没有宝贝来扩列啊，本人18女，infj，平时爱玩乙游，爱看同人文。会常常深夜emo，可能会发消息说一些丧气话，介意的小宝就不要加我了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4178,
+      "post": "最近翻过往的记录看到这样的对话。 那时候在拼xx买到东西后写评论会上传到“拼小圈”，好友能看见自己买的东西，而十五天没评会自动上传。某一天我买了一把美工刀。她跑来问我买刀做什么。啊，真是一个令我温暖的问候呢。 其实我确实是在更换自伤的工具。 本来快遗忘了，如今又重新想起，原来我曾经有一个那么关心我的朋友。到今日我们已不再联系。到今日我已经没有开口的机会。到今日我也无法全然躲进谁的怀抱。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 134,
+      "post": "本po专门用于大家的情绪发泄，如果不好意思发在公共场合讲话，可以把我当垃圾箱，如果不需要我回复说完以后发个1就可以。",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7280,
+      "post": "竟然还真有答案，那我就放心服用了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3266,
+      "post": "不想坚持了，好难熬",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 28,
+      "post": "任何从头开始的事对我来说都很困难",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7333,
+      "post": "我发现对我来说 等刀子划到自己身上的时候 我才不会像疯子一样 我才会冷静下来",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4662,
+      "post": "我到底该怎么做 怎么做都是错的",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2052,
+      "post": "前几天跟室友吵架发病，呼吸性碱中毒，还向室友磕了三个头，而且最近一个月发病了3次左右了，我这是变严重了吗",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4847,
+      "post": "怕着怕那，就没有不怕的",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3598,
+      "post": "又要睡觉了啊什么时候可以直接睡到死",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4361,
+      "post": "疼疼疼疼疼，再疼我死给你看",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 4205,
+      "post": "前方是深渊，后面也是",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6868,
+      "post": "我不开心，我的名字时时刻刻提醒着我的痛苦。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6808,
+      "post": "我生日许愿 节日许愿 过年许愿 每次都希望未来开开心心 什么时候能实现愿望啊 santa老爷爷可不可以快点让我实现",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5368,
+      "post": "真的每天都好崩溃啊！吃的药物三四个月了不起作用，这几天每天都在哭。啥事都不想做，除了玩手机。换了好几次药，都不管用。上半年的时候医生建议我去做个药物基因检测要三千块钱，我爸妈不肯给钱。我真的好崩溃啊！自己又克服不了心理障碍去打工，也没钱去心理咨询。家里人都说医生是骗人的，宁愿花光全部积蓄用迷信治疗，也不愿意管下我的病，带我去大城市治疗。我真的好想死啊！ 中药我也喝不下，西医治疗断断续续好不了，已经躺床上三年多了，真的不知道怎么办了。没有跟个废物一样",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 5569,
+      "post": "我现在说早安，这样的话各位明天第一个早安就是我了，赢✌🏻！",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3650,
+      "post": "我已经分裂到研究我妈的微信步数 ，一会看一次一会看一次 ，然后脑补不好的事情， 甚至觉得他们瞒着我怎么办呀，控制不住自己",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 5015,
+      "post": "奎流平半粒",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6540,
+      "post": "稍微好点但是后半夜还是会有睡不着",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 6807,
+      "post": "我真的很想好起来，好难受啊，头昏",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3020,
+      "post": "唉，骑车撞马路牙子上了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1138,
+      "post": "我讨厌有人要求我去共情，自己过的幸福，你就觉得不幸的人是自己价值观出了问题，（这是我曾经见到的一个高中心理老师说的话）（他的原话是，除了生病以外，你感受到的痛苦，都是价值观给你带来的，而并非是真实存在的，而不要因为眼眶一红啊，就觉得人间不值得，给我去医院走一走，去贫困山区看一看，然后你就会发现没病没灾就是幸运的，吃饱穿暖就是幸福）真的很让我觉得好笑，话说的挺干净的，我怎么能听出另外一种意思？告诉受伤的人比你惨的人多了去了，你生活美满，一日三餐，吃饱喝足就已经很好了，不要不知好歹?避重就轻，别人的痛苦，把别人的痛苦归根于痛苦人本人身上，还觉得很有道理，他是不是觉得他自己说的很有道理，如果一个人他生活美满他就不会觉得人间不值得，这个世界上所有的人都是平等的，但就是有不公平，是不是觉得你过的幸福，别人也是一样过的幸福的，只是价值观出问题了我告诉你。价值观有问题的人是你，你能当上心理老师，我真的是造孽，被校园暴力也是本人价值观出问题吗？被孤立本人也是价值观出问题吗",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 77,
+      "post": "还是被胃疼吵醒的",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7887,
+      "post": "我有猫了！叫她度度，希望她像度洛西汀一样帮助我度过抗抑郁的时光",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2860,
+      "post": "甲流，肺炎，发烧，全身酸痛，人很暴躁",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1584,
+      "post": "睡不着，完全睡不着，明明已经很累了可是就是睡不着，感觉周围很吵，光很刺眼，我想把自己藏进柜子里，藏起来就不会有人注意到我了，都是我的不对，我的错，我活该，别再折磨我了，我感觉自己已经没有生命力了",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6951,
+      "post": "要睡觉了，明天还要考试。我不想考试",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 1733,
+      "post": "我真的好崩溃啊 我的学业全被它毁了 全被我自己毁了 活着还有意义吗",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 816,
+      "post": "本来很喜欢工作上班的，感觉好好工作未来充满希望。 现在工作变成熬班了，只有下班的时候舒心，其他时候都感到郁闷。",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 341,
+      "post": "只有我觉得跨年庆祝不庆祝没什么关系吗？反正当下是以后日子里最好的一天了。但还是希望大家，新年快乐，天天快乐。",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 966,
+      "post": "我不想考了，我放弃了，我输了",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3463,
+      "post": "为什么不会猝死",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 6907,
+      "post": "终生服药就结不了婚，是啊是啊，连自己都不爱自己，还有什么意义",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2628,
+      "post": "不想上学，但是又想学习，是矫情吗？我不知道，爸妈都说只是轻度抑郁＋焦虑而已，没什么事的，可他们忘了我的自杀倾向和行为89%",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2780,
+      "post": "出院的第三天。情况很差，我越来越难以控制自己的情绪了，我要很努力才能控制自己不在旅馆里过量服药。 出院前，我就预感到这几天会很难过，所以给自己安排了满满的行程。四天的旅馆，我计划了两场电影，一场相声，以及故宫游和国博游。然而北京的暴雪阻碍了我的脚步。第一晚，从旅馆到电影院不到800米的路让我胆战心惊，以至于散场时加价50元打车回旅馆，只是为了让车子到地库接我，我可以不用再伫立街头，不敢迈步。当晚，我退了另一场电影票，故宫和国博的门票。相声票退不了，但我也已经不想去了。 然而老天总是喜欢不遗余力得打击我。昨天下午接到院总电话，入院安排被推迟了一天。凌晨发现被前夫拉黑了支付宝通讯录。 我努力平复情绪，可真的很难做到。在旅馆里，我的失眠更加严重，安眠药已经彻底无效。肩痛越发严重，不能做康复让我担忧。我还要承担断药的风险，出院时带的药是按天开的，只有四天的量。住院时每天规律的康复和作息，让我感到忙碌，现在整天无所事事，对未来的恐惧几乎要压垮我。我不知道我还能做些什么？深深的无力感。我好想吃一大把米氮平，让自己一觉睡到周二。",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 2265,
+      "post": "能不能安慰我一下，真的太累了好想死",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 156,
+      "post": "我服了 抑郁症活该被当成一种拖累嘛",
+      "ground_truth": "depressed",
+      "label": "depression"
+    },
+    {
+      "index": 4213,
+      "post": "不想住院，家人都没空照顾我只能住封闭式但封闭式又不能带手机，没有手机真的会死的",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2745,
+      "post": "今天是我的生日 而我现在还没睡 睁着哭肿的眼睛在写明天下午去心理医生那里要说什么抑郁症",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 7673,
+      "post": "六点面试我还是忍不住紧张哇哈哈哈哈哈哈",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 6019,
+      "post": "#每日三件好事# 因为这几天生病了，所以睡了几天，没发这个。 今天：①喝药发现是甜的，和红糖水一样。以及，我会认为它是一件好事！ 明天又去见我亲爱的葛医生了。",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 2866,
+      "post": "我好难受",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 8025,
+      "post": "山东济南那边的有一个私人的心理咨询的地方就是，我不知道怎么说语言比较混乱。想不起来具体位置，两年前的事了但还是印象很深，是在楼里进去是两排桌子有电脑（和学校那种就是差不多）然后旁边有一个小房间会和你单独说话。有一个沙盘，旁边是放着各种小玩具的架子。不要去，那里的咨询师根本理解不了人。在我倾诉的时候我哭得稀里哗啦，她在笑，我说我不想活但是有顾虑太多，她还在笑，感觉她下一秒就要笑出声了，不要去。私人心理咨询不推荐去。想起来就好崩溃，为什么会有这种人",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    },
+    {
+      "index": 3189,
+      "post": "我能考上啥呀 我烤地瓜去吧……",
+      "ground_truth": "not depressed",
+      "label": "normal"
+    }
+  ]
+}

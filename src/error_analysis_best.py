@@ -28,7 +28,7 @@ from src.data_pipeline import load_splits  # noqa: E402
 RESULTS = ROOT / "results"
 LANGUAGES = ["Arabic", "Chinese", "Portuguese", "Thai"]
 KEYWORDS = {"Arabic": "اكتئاب", "Chinese": "抑郁", "Portuguese": "suicid", "Thai": "ซึมเศร้า"}
-KNN_NAME = "KNN (CountVectorizer)"
+KNN_NAME = "KNN (tuned)"
 
 
 def load_all_predictions():
