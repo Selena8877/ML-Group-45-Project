@@ -75,9 +75,10 @@ def setup_logging(level: int = logging.INFO) -> logging.Logger:
 # ---------------------------------------------------------------------------
 
 def _phase2_candidates(language: str) -> list[Path]:
-    # newest audit output first, the older human-evaluation workbook last
+    # newest sample first (json, then audit workbook), the older human-evaluation workbook last
     name = f"phase2_audit_{language}_seed{SEED}.xlsx"
     return [
+        *sorted(PHASE2_DIR.glob(f"{language}_*phase2*seed{SEED}.json")),
         PHASE2_DIR / name,
         PHASE2_AUDIT_DIR / name,
         PHASE2_DIR / f"{language.capitalize()} HE.xlsx",
@@ -99,6 +100,29 @@ def _read_phase2_sheet(path: Path) -> pd.DataFrame:
             df.columns = names
             return df.reset_index(drop=True)
     raise ValueError(f"{path.name}: no header row with 'post original' and 'ground truth'")
+
+
+def _read_phase2_json(path: Path) -> tuple[pd.DataFrame, str | None]:
+    # accepts a plain list of posts or {"metadata": ..., "samples"/"posts": [...]}
+    with open(path, encoding="utf-8") as fh:
+        data = json.load(fh)
+    meta = data.get("metadata", {}) if isinstance(data, dict) else {}
+    rows = data
+    if isinstance(data, dict):
+        rows = next((data[k] for k in ("samples", "posts", "data") if isinstance(data.get(k), list)), None)
+    if not isinstance(rows, list):
+        raise ValueError(f"{path.name}: expected a list of posts or a 'samples' list")
+
+    df = pd.DataFrame(rows)
+    df.columns = [_norm(c) for c in df.columns]
+    post_col = next((c for c in ("post_original", "post", "text") if c in df.columns), None)
+    label_col = next((c for c in ("ground_truth", "label") if c in df.columns), None)
+    if post_col is None or label_col is None:
+        raise ValueError(f"{path.name}: needs a post column and a ground_truth column, found {list(df.columns)}")
+    df = df.rename(columns={post_col: "post_original", label_col: "ground_truth"})
+    if "index" not in df.columns:
+        df["index"] = pd.NA
+    return df[["post_original", "ground_truth", "index"]].astype({"post_original": "string"}), meta.get("dataset")
 
 
 def _normalise_label(value) -> str | None:
@@ -149,7 +173,11 @@ def load_phase2_posts(languages: list[str]) -> dict[str, list[dict]]:
             posts_by_lang[lang] = []
             continue
 
-        df = _read_phase2_sheet(path)
+        if path.suffix == ".json":
+            df, file_dataset = _read_phase2_json(path)
+        else:
+            df, file_dataset = _read_phase2_sheet(path), None
+            df["index"] = pd.NA
         n_rows = len(df)
         df["post_original"] = df["post_original"].astype("string").str.strip()
         df["label"] = df["ground_truth"].map(_normalise_label)
@@ -171,9 +199,12 @@ def load_phase2_posts(languages: list[str]) -> dict[str, list[dict]]:
             log.warning(f"[{lang}] {conflicts} posts appear with BOTH labels; kept as separate rows")
 
         lookup, dataset, phase1_file = _load_phase1_index(lang, list(df["post_original"]))
+        dataset = file_dataset or dataset  # dataset named in the phase 2 file wins over the phase 1 match
         posts, used, unmatched = [], set(), 0
-        for row_no, (text, label) in enumerate(zip(df["post_original"], df["label"]), start=1):
-            idx = lookup.get(text)
+        for row_no, (text, label, own_idx) in enumerate(
+                zip(df["post_original"], df["label"], df["index"]), start=1):
+            # use the index stored in the phase 2 file if there is one, else look it up in phase 1
+            idx = int(own_idx) if pd.notna(own_idx) and str(own_idx).lstrip("-").isdigit() else lookup.get(text)
             if idx is None or idx in used:
                 # no phase 1 match: stable row-based id, offset so it cannot clash with a real index
                 idx = 900000 + row_no
@@ -213,7 +244,7 @@ def _check_chinese_is_depglm() -> None:
     if not is_depglm:
         log.warning("[chinese] Phase 2 posts are NOT from DepGLM "
                     f"(matched Phase 1 dataset = '{info['phase1_dataset']}'). Expected the DepGLM "
-                    "Phase 1 file in data/phase1/ and phase2_audit_chinese_seed42.xlsx in results/phase2/.")
+                    "Phase 1 file in data/phase1/ and a DepGLM Phase 2 file in results/phase2/.")
     elif info["phase1_matched"] < info["posts"]:
         log.warning(f"[chinese] only {info['phase1_matched']}/{info['posts']} Phase 2 posts found in "
                     "the DepGLM Phase 1 file")
