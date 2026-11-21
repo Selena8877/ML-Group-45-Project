@@ -363,14 +363,142 @@ def prompt_summary(prompts: dict[str, dict[str, str]]) -> pd.DataFrame:
 # model execution
 # ---------------------------------------------------------------------------
 
+# Keep model settings aligned with scripts/run_phase1.py.
+MODEL_SPECS = {
+    "gemini": ("GeminiProvider", "gemini-3.1-flash-lite", 500),
+    "openai": ("OpenAIProvider", "gpt-5.4-nano", 500),
+    "claude": ("ClaudeProvider", "claude-haiku-4-5", 500),
+    "llama": ("LMStudioProvider", "Meta-Llama-3-8B-Instruct", 500),
+    "gemma": ("LMStudioProvider", "gemma-2-9b-it", 4000),
+    "qwen": ("LMStudioProvider", "Qwen3.5-9B", 500),
+}
+LOCAL_MODELS = {"llama", "gemma", "qwen"}
+SAVE_EVERY = 50
+
+
+def _checkpoint_path(model: str, language: str, condition: str) -> Path:
+    return CHECKPOINT_DIR / model / language / f"{condition}.partial.json"
+
+
+def _valid_result(result: dict) -> bool:
+    return (isinstance(result, dict) and
+            result.get("classification") in {"depressed", "not depressed"} and
+            isinstance(result.get("post"), str) and
+            isinstance(result.get("index"), int) and
+            not result.get("error"))
+
+
+def _load_checkpoint(model: str, language: str, condition: str, posts: list[dict]) -> dict[int, dict]:
+    path = _checkpoint_path(model, language, condition)
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        if (payload.get("model"), payload.get("language"), payload.get("condition")) != (model, language, condition):
+            log.warning("Checkpoint metadata mismatch: %s", path)
+            return {}
+        expected = {int(p["index"]): p for p in posts}
+        done = {}
+        for item in payload.get("results", []):
+            if not _valid_result(item):
+                continue
+            idx = item["index"]
+            if idx in expected and item["post"] == expected[idx]["post"] and item.get("ground_truth") == expected[idx]["ground_truth"]:
+                done[idx] = item
+        return done
+    except (OSError, ValueError, TypeError, AttributeError) as exc:
+        log.warning("Cannot read checkpoint %s: %s", path, exc)
+        return {}
+
+
+def _save_checkpoint(model: str, language: str, condition: str, results: dict[int, dict]) -> None:
+    path = _checkpoint_path(model, language, condition)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {"model": model, "language": language, "condition": condition,
+               "seed": SEED, "results": [results[i] for i in sorted(results)]}
+    temp = path.with_suffix(".tmp")
+    temp.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    temp.replace(path)
+
+
 def checkpoint_completion(model: str, language: str, condition: str, posts: list[dict]) -> float | None:
-    # % of posts already saved in ablation/checkpoints_phase2/, or none if there is no checkpoint
-    return None
+    path = _checkpoint_path(model, language, condition)
+    if not path.exists():
+        return None
+    if not posts:
+        return 100.0
+    return 100.0 * len(_load_checkpoint(model, language, condition, posts)) / len(posts)
+
+
+def _init_provider(model: str):
+    # Imported only during real execution: --dry-run never needs SDKs or API keys.
+    import os
+    from src.models import ClaudeProvider, GeminiProvider, LMStudioProvider, OpenAIProvider
+
+    providers = {"ClaudeProvider": ClaudeProvider, "GeminiProvider": GeminiProvider,
+                 "LMStudioProvider": LMStudioProvider, "OpenAIProvider": OpenAIProvider}
+    class_name, model_id, max_tokens = MODEL_SPECS[model]
+    if model in LOCAL_MODELS:
+        return providers[class_name](api_key="lm-studio", model_name=model_id,
+                                     max_tokens=max_tokens, max_retries=1,
+                                     no_think=(model == "qwen"))
+    env_name = {"gemini": "GEMINI_API_KEY", "openai": "OPENAI_API_KEY",
+                "claude": "CLAUDE_API_KEY"}[model]
+    api_key = os.getenv(env_name)
+    if not api_key:
+        raise RuntimeError(f"Missing {env_name}; provider not initialized")
+    return providers[class_name](api_key=api_key, model_name=model_id, max_tokens=max_tokens)
 
 
 def run_ablation(models: list[str], posts_by_lang: dict[str, list[dict]],
                  prompts: dict[str, dict[str, str]], conditions: list[str]) -> None:
-    raise NotImplementedError("model execution is not implemented yet")
+    for model in models:
+        provider = None
+        for language, posts in posts_by_lang.items():
+            for condition in conditions:
+                done = _load_checkpoint(model, language, condition, posts)
+                pending = [p for p in posts if int(p["index"]) not in done]
+                log.info("[%s/%s/%s] %d completed; %d pending", model, language,
+                         condition, len(done), len(pending))
+                if not pending:
+                    continue
+                if provider is None:
+                    try:
+                        provider = _init_provider(model)
+                    except Exception as exc:
+                        log.warning("[%s] Provider unavailable: %s; skipping model", model, exc)
+                        break
+                attempted = 0
+                for post in pending:
+                    try:
+                        response = provider.classify(post=post["post"],
+                                                     prompt_template=prompts[language][condition])
+                        prediction = response.get("prediction", "unclear")
+                        item = {"index": int(post["index"]), "post": post["post"],
+                                "ground_truth": post["ground_truth"],
+                                "classification": prediction,
+                                "raw_response": response.get("raw_response", ""),
+                                "error": response.get("error")}
+                    except Exception as exc:
+                        item = {"index": int(post["index"]), "post": post["post"],
+                                "ground_truth": post["ground_truth"],
+                                "classification": "error", "raw_response": "", "error": str(exc)}
+                    if _valid_result(item):
+                        done[item["index"]] = item
+                    else:
+                        log.warning("[%s/%s/%s] row %s not completed: %s", model,
+                                    language, condition, post["index"], item.get("error") or item["classification"])
+                        if model in LOCAL_MODELS and item.get("error"):
+                            log.warning("[%s] Local endpoint unavailable; stopping this condition", model)
+                            break
+                    attempted += 1
+                    if attempted % SAVE_EVERY == 0:
+                        _save_checkpoint(model, language, condition, done)
+                        log.info("[%s/%s/%s] checkpoint: %d valid predictions", model,
+                                 language, condition, len(done))
+                _save_checkpoint(model, language, condition, done)
+                log.info("[%s/%s/%s] saved %d/%d valid predictions", model,
+                         language, condition, len(done), len(posts))
 
 
 # ---------------------------------------------------------------------------
